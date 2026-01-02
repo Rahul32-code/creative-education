@@ -2413,7 +2413,7 @@ select:focus {
 .mobile-menu .navigation li.dropdown .dropdown-btn {
     position: absolute;
     top: 6px;
-    right: 6px;
+    /* right: 6px; */
     width: 32px;
     height: 32px;
     text-align: center;
