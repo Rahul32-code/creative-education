@@ -536,6 +536,29 @@
     height: 100px;
     margin-right: 0;
 }
+/* img fix  */
+
+@media (min-width: 1220px) {
+    .main-menu .navigation > li.blank-box {
+        width: 140px;
+    }
+} 
+@media (min-width: 1320px) {
+    .main-menu .navigation > li.blank-box {
+        width: 239px;
+    }
+}
+@media (min-width: 1400px) {
+    .main-menu .navigation > li.blank-box {
+        width: 340px;
+    }
+}
+@media (min-width: 1439px) {
+    .main-menu .navigation > li.blank-box {
+        width: 350px;
+    }
+}
+
 
 .main-menu .navigation>li:last-child {
     margin-right: 0;
