@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
-<!-- Mirrored from st.ourhtmldemo.com/new/educamb/about.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 30 Dec 2025 10:21:20 GMT -->
 <head>
     <meta charset="UTF-8">
     <title>Educamb - The Multi-Purpose HTML5 Template</title>
@@ -17,6 +15,8 @@
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;400;500;700;900&amp;display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
 
 
 
@@ -37,8 +37,6 @@
     <link rel="stylesheet" href="assets/css/scrollbar.css">
     <link rel="stylesheet" href="assets/css/swiper.min.css">
 
-    <link rel="stylesheet" href="assets/css/slick.css">
-
     <!-- Module css -->
     <link rel="stylesheet" href="assets/css/module-css/header-section.css">
     <link rel="stylesheet" href="assets/css/module-css/banner-section.css">
@@ -58,15 +56,95 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
     <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon.png">
+    <!-- <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" href="assets/images/favicon/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="assets/images/favicon/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="assets/images/favicon/favicon-16x16.png" sizes="16x16"> -->
 
     <!-- Fixing Internet Explorer-->
     <!--[if lt IE 9]>
         <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
         <script src="assets/js/html5shiv.js"></script>
     <![endif]-->
+    <style>
+        /* RESET ISSUES */
+        .bottom-parallax,
+        .footer-area,
+        .footer {
+            overflow: visible !important;
+        }
+
+        /* MAIN FOOTER */
+        .footer {
+            background: #0b1c2d;
+            padding: 120px 0;
+            color: #cfd8e3;
+        }
+
+        .single-footer-widget h3 {
+            color: #fff;
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        /* LINKS */
+        .footer-links {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+
+        .footer-links a {
+            color: #cfd8e3;
+            text-decoration: none;
+        }
+
+        .footer-links a:hover {
+            color: #ffc107;
+        }
+
+        /* SOCIAL */
+        .footer-social a {
+            display: inline-flex;
+            width: 36px;
+            height: 36px;
+            background: rgba(255, 255, 255, 0.1);
+            color: #fff;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            margin-right: 8px;
+        }
+
+        .footer-social a:hover {
+            background: #ffc107;
+            color: #000;
+        }
+
+        /* FOOTER BOTTOM (IMPORTANT) */
+        .footer-bottom {
+            background: #071420;
+            padding: 15px 0;
+            text-align: center;
+            display: block;
+            width: 100%;
+            position: relative;
+            z-index: 99;
+        }
+
+        .footer-bottom p {
+            margin: 0;
+            font-size: 14px;
+            color: #cfd8e3;
+        }
+
+        .footer-bottom a {
+            color: #ffc107;
+            text-decoration: none;
+        }
+    </style>
 
 </head>
 
@@ -98,11 +176,17 @@
                             <span data-text-preloader="a" class="letters-loading">
                                 a
                             </span>
-                            <span data-text-preloader="m" class="letters-loading">
-                                m
+                            <span data-text-preloader="t" class="letters-loading">
+                                t
                             </span>
-                            <span data-text-preloader="b" class="letters-loading">
-                                b
+                            <span data-text-preloader="i" class="letters-loading">
+                                i
+                            </span>
+                            <span data-text-preloader="o" class="letters-loading">
+                                o
+                            </span>
+                            <span data-text-preloader="n" class="letters-loading">
+                                n
                             </span>
                         </div>
                     </div>
@@ -112,44 +196,11 @@
         <!-- preloader end -->
 
         <!-- page-direction -->
-        <div class="page_direction" style="display: none;">
+        <!-- <div class="page_direction" style="display: none;">
             <div class="demo-rtl direction_switch"><button class="rtl">RTL</button></div>
             <div class="demo-ltr direction_switch"><button class="ltr">LTR</button></div>
-        </div>
+        </div> -->
         <!-- page-direction end -->
-
-        <!-- switcher menu -->
-        <div class="switcher">
-            <div class="switch_btn">
-                <button><img src="assets/images/icon/color-palette.png" alt="Color Palette"> </button>
-            </div>
-            <div class="switch_menu">
-                <!-- color changer -->
-                <div class="switcher_container">
-                    <ul id="styleOptions" title="switch styling">
-                        <li>
-                            <a href="javascript: void(0)" data-theme="blue" class="blue-color"></a>
-                        </li>
-                        <li>
-                            <a href="javascript: void(0)" data-theme="pink" class="pink-color"></a>
-                        </li>
-                        <li>
-                            <a href="javascript: void(0)" data-theme="violet" class="violet-color"></a>
-                        </li>
-                        <li>
-                            <a href="javascript: void(0)" data-theme="crimson" class="crimson-color"></a>
-                        </li>
-                        <li>
-                            <a href="javascript: void(0)" data-theme="orange" class="orange-color"></a>
-                        </li>
-                        <li>
-                            <a href="javascript: void(0)" data-theme="green" class="green-color"></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <!-- end switcher menu -->
 
 
         <!-- Main header-->
@@ -160,7 +211,7 @@
                 <div class="auto-container">
                     <div class="outer-box">
                         <div class="header-top-left">
-                            <div class="info-box">
+                            <!-- <div class="info-box">
                                 <span class="icon-info"></span>
                                 <p>Info for</p>
                             </div>
@@ -170,7 +221,7 @@
                                     <option value="1">Teacher</option>
                                     <option value="2">Students</option>
                                 </select>
-                            </div>
+                            </div> -->
                             <div class="subscribe-box">
                                 <div class="icon">
                                     <span class="icon-email"></span>
@@ -187,12 +238,6 @@
                                         <a href="#"><i class="icon-facebook-app-symbol"></i></a>
                                     </li>
                                     <li>
-                                        <a href="#"><i class="icon-twitter-1"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="icon-linkedin"></i></a>
-                                    </li>
-                                    <li>
                                         <a href="#"><i class="icon-youtube"></i></a>
                                     </li>
                                 </ul>
@@ -207,11 +252,13 @@
                                 </div>
                                 <div class="link-box">
                                     <ul>
-                                        <li><a href="#">Calendars</a></li>
-                                        <li><a href="#">Directory</a></li>
-                                        <li><a href="#">Visit</a></li>
-                                        <li><a href="#">Careers</a></li>
-                                        <li><a href="#">Give</a></li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="icon-account"
+                                                    style="display:inline-block;margin-right:5px;"></span>
+                                                Login
+                                            </a>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
@@ -228,7 +275,7 @@
                     <div class="outer-box">
 
                         <!--Start Header Left-->
-                        <div class="header-left">
+                        <!-- <div class="header-left">
                             <div class="language-select-box">
                                 <div class="icon">
                                     <span class="icon-web"></span>
@@ -248,18 +295,20 @@
                                     Search
                                 </button>
                             </div>
-                        </div>
+                        </div> -->
                         <!--End Header Left-->
 
                         <!--Start Header Left-->
                         <div class="header-middle">
                             <div class="main-logo-box">
-                                <a href="index.html">
-                                    <img src="assets/images/resources/logo.png" alt="Awesome Logo" title="">
+                                <a href="#">
+                                    <img src="assets/images/resources/logo.png" alt="Awesome Logo" class="logo"
+                                        title="">
                                 </a>
                             </div>
 
                             <div class="nav-outer style1 clearfix">
+
                                 <!--Mobile Navigation Toggler-->
                                 <div class="mobile-nav-toggler">
                                     <div class="inner">
@@ -273,78 +322,13 @@
 
                                     <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
                                         <ul class="navigation clearfix">
-                                            <li class="dropdown megamenu"><a href="#">Home</a>
-                                                <ul class="mega_menuv2">
-                                                    <div class="row">
-                                                      <div class="col">
-                                                        <a href="index.html" class="mfbox">
-                                                            <img src="assets/images/home/1/home-1.jpg" class="img-fluid" alt="img" />
-                                                        </a>
-                                                        <div class="arrow">University Demo <i class="fa fa-angle-right"></i></div>
-                                                      </div>
-                                                      <div class="col">
-                                                        <a href="index-2.html" class="mfbox">
-                                                            <img src="assets/images/home/2/home-4.jpg" class="img-fluid" alt="img" />
-                                                        </a>
-                                                        <div class="arrow">Kindergarten Demo <i class="fa fa-angle-right"></i></div>
-                                                      </div>
-                                                      <div class="col">
-                                                        <a href="index-3.html" class="mfbox">
-                                                            <img src="assets/images/home/3/home-2.jpg" class="img-fluid" alt="img" />
-                                                        </a>
-                                                        <div class="arrow">Academy  Demo <i class="fa fa-angle-right"></i></div>
-                                                      </div>
-                                                      <div class="col">
-                                                        <a href="index-4.html" class="mfbox">
-                                                            <img src="assets/images/home/4/home-3.jpg" class="img-fluid" alt="img" />
-                                                        </a>
-                                                        <div class="arrow">Instructor  Demo <i class="fa fa-angle-right"></i></div>
-                                                      </div>
-                                                      <div class="col">
-                                                        <a href="index-5.html" class="mfbox">
-                                                            <img src="assets/images/home/5/home-10.jpg" class="img-fluid" alt="img" />
-                                                        </a>
-                                                        <div class="arrow">Marketplace  Demo <i class="fa fa-angle-right"></i></div>
-                                                      </div>
-                                                    </div>
-                                                    <div class="row">
-                                                      <div class="col">
-                                                        <a href="index-6.html" class="mfbox">
-                                                            <img src="assets/images/home/6/home-9.jpg" class="img-fluid" alt="img" />
-                                                        </a>
-                                                        <div class="arrow">Single Course  Demo <i class="fa fa-angle-right"></i></div>
-                                                      </div>
-                                                      <div class="col">
-                                                        <a href="index-7.html" class="mfbox">
-                                                            <img src="assets/images/home/7/home-6.jpg" class="img-fluid" alt="img" />
-                                                        </a>
-                                                        <div class="arrow">Cooking Course  Demo <i class="fa fa-angle-right"></i></div>
-                                                      </div>
-                                                      <div class="col">
-                                                        <a href="index-8.html" class="mfbox">
-                                                            <img src="assets/images/home/8/home-7.jpg" class="img-fluid" alt="img" />
-                                                        </a>
-                                                        <div class="arrow">Quiz Learning  Demo <i class="fa fa-angle-right"></i></div>
-                                                      </div>
-                                                      <div class="col">
-                                                        <a href="index-9.html" class="mfbox">
-                                                            <img src="assets/images/home/9/home-5.jpg" class="img-fluid" alt="img" />
-                                                        </a>
-                                                        <div class="arrow">College  Demo <i class="fa fa-angle-right"></i></div>
-                                                      </div>
-                                                      <div class="col">
-                                                        <a href="index-10.html" class="mfbox">
-                                                            <img src="assets/images/home/10/home-8.jpg" class="img-fluid" alt="img" />
-                                                        </a>
-                                                        <div class="arrow">High School  Demo <i class="fa fa-angle-right"></i></div>
-                                                      </div>
-                                                    </div>
-                                                  </ul>
-                                            </li>
-                                            <li class="dropdown current"><a href="#">Pages</a>
+                                            <li class="current"><a href="#">Home</a></li>
+
+                                            <li class="dropdown"><a href="#">About Us</a>
                                                 <ul>
-                                                    <li><a href="about.html">About University</a></li>
-                                                    <li>
+                                                    <li><a href="about.html">About School</a></li>
+                                                    <li><a href="#">Our faculties</a></li>
+                                                    <!-- <li>
                                                         <a href="events.html">Events Style 01</a>
                                                     </li>
                                                     <li>
@@ -354,59 +338,64 @@
                                                         <a href="events-3.html">Events Style 03</a>
                                                     </li>
                                                     <li>
-                                                        <a href="events-details.html">Events Details</a>
+                                                        <a href="#">Events Details</a>
                                                     </li>
                                                     <li>
                                                         <a href="faq.html">Faq’s Page</a>
                                                     </li>
                                                     <li>
                                                         <a href="error.html">Error Page</a>
-                                                    </li>
+                                                    </li> -->
                                                 </ul>
                                             </li>
-                                            <li class="dropdown"><a href="#">Academics</a>
+                                            <li class="dropdown"><a href="#">Course</a>
                                                 <ul>
-                                                    <li>
-                                                        <a href="academics-overview.html">
-                                                            University Overview
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="campus-life.html">
-                                                            University Campus Life
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="departments.html">
-                                                            University Departments
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="university-programs.html">
-                                                            University Programs
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="programs-detail.html">
-                                                            University Programs Details
-                                                        </a>
-                                                    </li>
+                                                    <li><a href="">Python</a></li>
+                                                    <li><a href="">Java</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="dropdown"><a href="#">Students</a>
+                                                <ul>
+                                                    <li><a href="#">Student Registration</a></li>
+                                                    <li><a href="#">Contact Us</a></li>
+                                                    <li><a href="#">Attendance Verification</a></li>
+                                                    <li><a href="#">Result Verification</a></li>
+                                                    <li><a href="#">Enrollment Verification</a></li>
+                                                    <!-- <li><a href="university-programs.html">University Programs</a></li>
+                                                    <li><a href="programs-detail.html">University Programs Details</a></li> -->
                                                 </ul>
                                             </li>
                                             <li class="blank-box"></li>
-                                            <li><a href="university-admissions.html">Admissions</a></li>
-                                            <li class="dropdown"><a href="#">Blog</a>
+                                            <li class="dropdown"><a href="#">Teachers</a>
                                                 <ul>
-                                                    <li><a href="blog.html">Blog Grid View</a></li>
-                                                    <li><a href="blog-2.html">Blog List View</a></li>
-                                                    <li><a href="blog-3.html">Blog Large View</a></li>
-                                                    <li><a href="blog-single.html">Blog Details</a></li>
+                                                    <li><a href="#">Teacher Login</a></li>
+                                                    <!-- login ke baad dikhenge -->
+                                                    <li><a href="#">Mark Attendance</a></li>
+                                                    <li><a href="#">View Attendance</a></li>
+                                                    <!-- <li><a href="university-programs.html">University Programs</a></li>
+                                                    <li><a href="programs-detail.html">University Programs Details</a></li> -->
+                                                </ul>
+                                            </li>
+                                            <!-- <li><a href="blog.html">Blog</a></li> -->
+                                            <li class="dropdown"><a href="#">News & Notice</a>
+                                                <ul>
+                                                    <!-- <li><a href="blog.html">Blog Grid View</a></li> -->
+                                                    <li><a href="#">Blog List View</a></li>
+                                                    <!-- <li><a href="blog-3.html">Blog Large View</a></li> -->
+                                                    <li><a href="#">Blog Details</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="dropdown">
+                                                <a href="#">Gallery</a>
+                                                <ul>
+                                                    <li><a href="#">Photo Gallery</a></li>
+                                                    <li><a href="#">Video Gallery</a></li>
+                                                    <li><a href="#">Achivements</a></li>
                                                 </ul>
                                             </li>
                                             <li><a href="contact.html">Contact</a></li>
                                         </ul>
                                     </div>
-
 
                                 </nav>
                                 <!-- Main Menu End-->
@@ -415,7 +404,7 @@
                         <!--End Header Left-->
 
                         <!--Start Header Right-->
-                        <div class="header-right">
+                        <!-- <div class="header-right">
                             <div class="header-right__menu">
                                 <ul>
                                     <li>
@@ -432,7 +421,7 @@
                                     </li>
                                 </ul>
                             </div>
-                        </div>
+                        </div> -->
                         <!--End Header Right-->
 
                     </div>
@@ -446,8 +435,8 @@
                     <div class="sticky-header__inner clearfix">
                         <!--Logo-->
                         <div class="logo float-left">
-                            <a href="index.html" class="img-responsive">
-                                <img src="assets/images/resources/sticky-logo.png" alt="" title="">
+                            <a href="#" class="img-responsive">
+                                <img src="assets/images/resources/sticky-logo.png" alt="" class="logo" title="">
                             </a>
                         </div>
                         <!--Right Col-->
@@ -468,8 +457,8 @@
                 <div class="close-btn"><span class="icon fa fa-times-circle"></span></div>
                 <nav class="menu-box">
                     <div class="nav-logo">
-                        <a href="index.html">
-                            <img src="assets/images/resources/mobilemenu-logo.png" alt="" title="">
+                        <a href="#">
+                            <img src="assets/images/resources/mobilemenu-logo.png" alt="" class="logo" title="">
                         </a>
                     </div>
                     <div class="menu-outer">
@@ -479,15 +468,13 @@
                     <div class="social-links">
                         <ul class="clearfix">
                             <li><a href="#"><span class="fab fa fa-facebook-square"></span></a></li>
-                            <li><a href="#"><span class="fab fa fa-twitter-square"></span></a></li>
-                            <li><a href="#"><span class="fab fa fa-pinterest-square"></span></a></li>
-                            <li><a href="#"><span class="fab fa fa-google-plus-square"></span></a></li>
                             <li><a href="#"><span class="fab fa fa-youtube-square"></span></a></li>
                         </ul>
                     </div>
                 </nav>
             </div>
             <!-- End Mobile Menu -->
+
         </header>
 
 
@@ -500,13 +487,13 @@
                     <div class="col-xl-12">
                         <div class="inner-content">
                             <div class="title" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
-                                <h2>About Our University</h2>
+                                <h2>About Our School</h2>
                             </div>
                             <div class="breadcrumb-menu" data-aos="fade-down" data-aos-easing="linear"
                                 data-aos-duration="1500">
                                 <ul>
                                     <li><a href="index.html">Home</a></li>
-                                    <li class="active">About</li>
+                                    <li class="active">About Us</li>
                                 </ul>
                             </div>
                         </div>
@@ -521,10 +508,10 @@
         <section class="about-style1-area">
             <div class="container">
                 <div class="sec-title text-center">
-                    <h2>Leadership For The Global Education</h2>
+                    <h2>About</h2>
                     <div class="sub-title">
-                        <p>Untrammelled and when nothing prevents our being able do what we like<br>
-                            pleasure is to be welcomed and every pain.</p>
+                        <p>Lorem Ipsum dolroin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis
+                            bibendum auctor, nisi elit consequat ipsum, nec sagittis sem!p>
                     </div>
                 </div>
                 <div class="row">
@@ -533,16 +520,27 @@
                             <div class="row">
                                 <div class="col-xl-6">
                                     <div class="about-style1-content">
-                                        <div class="top">
-                                            <div class="big-text">E</div>
+                                        <div>
+                                            <style>
+                                                .custom-heading {
+                                                    letter-spacing: 0.5px;
+                                                    font-size: 15px;
+                                                    color: #eea412;
+                                                }
+                                            </style>
+                                            <!-- <div class="big-text">E</div> -->
+                                            <h4 class="text-uppercase fw-semibold mb-1 custom-heading">
+                                                2026 Best Smart Education School
+                                            </h4>
                                             <div class="text">
-                                                <p>ducamb welcomed every pain avoided but in certain circumstances owing
-                                                    to the claims of the obligations of business it will frequently
-                                                    occurs that pleasures.</p>
+                                                <h2 class="text-black">Awards Winner Support Center</h2>
                                             </div>
                                         </div>
                                         <div class="bottom-text">
-                                            <p>Certain circumstances owing to claims duty obligation that
+                                            <p class="mb-2">Certain circumstances owing to claims duty obligation that
+                                                off business it will frequently occurs in our free hours when our power
+                                                of choice is nothing prevents.</p>
+                                            <p class="mb-2">Certain circumstances owing to claims duty obligation that
                                                 off business it will frequently occurs in our free hours when our power
                                                 of choice is nothing prevents.</p>
                                         </div>
@@ -551,7 +549,7 @@
                                                 <span class="txt">Leadership</span>
                                             </a>
                                         </div>
-                                        <div class="accreditations-logo">
+                                        <!-- <div class="accreditations-logo">
                                             <div class="inner-tile">
                                                 <h3>Our Accreditations</h3>
                                             </div>
@@ -581,7 +579,7 @@
                                                     </div>
                                                 </li>
                                             </ul>
-                                        </div>
+                                        </div> -->
                                     </div>
                                 </div>
 
@@ -1512,6 +1510,112 @@
         <!--End Fact Counter Area-->
 
         <!--Start Team Style1 Area-->
+        <section class="team-style2-area">
+            <div class="container">
+                <div class="sec-title-style2 text-center">
+                    <div class="sub-title">
+                        <h5>Teachers</h5>
+                    </div>
+                    <h2>Our dedicated Teacher</h2>
+                </div>
+                <div class="row">
+
+                    <!--Start Single Team Style1-->
+                    <div class="col-xl-3 col-lg-6 col-md-6">
+                        <div class="single-team-style2 wow fadeInUp animated" data-wow-delay="100ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 100ms; animation-name: fadeInUp;">
+                            <div class="img-holder">
+                                <div class="inner">
+                                    <img src="assets/images/team/team-v2-1.jpg" alt="">
+                                </div>
+                                <div class="title-holder text-center">
+                                    <div class="img-bg" style="background-image: url(assets/images/team/team-v2-1.jpg);"></div>
+                                    <h3><a href="#">Ian Hudson</a></h3>
+                                    <p>Founder</p>
+                                </div>
+                            </div>
+                            <div class="social-link-box">
+                                <ul class="social-links">
+                                    <li class="tw"><a href="#"><i class="icon-twitter-1"></i></a></li>
+                                    <li class="fb"><a href="#"><i class="icon-facebook-app-symbol"></i></a></li>
+                                    <li class="linked"><a href="#"><i class="icon-linkedin"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Single Team Style1-->
+                    <!--Start Single Team Style1-->
+                    <div class="col-xl-3 col-lg-6 col-md-6">
+                        <div class="single-team-style2 wow fadeInUp animated" data-wow-delay="300ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 300ms; animation-name: fadeInUp;">
+                            <div class="img-holder">
+                                <div class="inner">
+                                    <img src="assets/images/team/team-v2-2.jpg" alt="">
+                                </div>
+                                <div class="title-holder text-center">
+                                    <div class="img-bg" style="background-image: url(assets/images/team/team-v2-2.jpg);"></div>
+                                    <h3><a href="#">Lillian Stella</a></h3>
+                                    <p>Teacher</p>
+                                </div>
+                            </div>
+                            <div class="social-link-box">
+                                <ul class="social-links">
+                                    <li class="tw"><a href="#"><i class="icon-twitter-1"></i></a></li>
+                                    <li class="fb"><a href="#"><i class="icon-facebook-app-symbol"></i></a></li>
+                                    <li class="linked"><a href="#"><i class="icon-linkedin"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Single Team Style1-->
+                    <!--Start Single Team Style1-->
+                    <div class="col-xl-3 col-lg-6 col-md-6">
+                        <div class="single-team-style2 wow fadeInUp animated" data-wow-delay="500ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 500ms; animation-name: fadeInUp;">
+                            <div class="img-holder">
+                                <div class="inner">
+                                    <img src="assets/images/team/team-v2-3.jpg" alt="">
+                                </div>
+                                <div class="title-holder text-center">
+                                    <div class="img-bg" style="background-image: url(assets/images/team/team-v2-3.jpg);"></div>
+                                    <h3><a href="#">Luis Kaiden</a></h3>
+                                    <p>Teacher</p>
+                                </div>
+                            </div>
+                            <div class="social-link-box">
+                                <ul class="social-links">
+                                    <li class="tw"><a href="#"><i class="icon-twitter-1"></i></a></li>
+                                    <li class="fb"><a href="#"><i class="icon-facebook-app-symbol"></i></a></li>
+                                    <li class="linked"><a href="#"><i class="icon-linkedin"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Single Team Style1-->
+                    <!--Start Single Team Style1-->
+                    <div class="col-xl-3 col-lg-6 col-md-6">
+                        <div class="single-team-style2 wow fadeInUp animated" data-wow-delay="700ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 700ms; animation-name: fadeInUp;">
+                            <div class="img-holder">
+                                <div class="inner">
+                                    <img src="assets/images/team/team-v2-4.jpg" alt="">
+                                </div>
+                                <div class="title-holder text-center">
+                                    <div class="img-bg" style="background-image: url(assets/images/team/team-v2-4.jpg);"></div>
+                                    <h3><a href="#">Anna Naomi</a></h3>
+                                    <p>ceo co founder</p>
+                                </div>
+                            </div>
+                            <div class="social-link-box">
+                                <ul class="social-links">
+                                    <li class="tw"><a href="#"><i class="icon-twitter-1"></i></a></li>
+                                    <li class="fb"><a href="#"><i class="icon-facebook-app-symbol"></i></a></li>
+                                    <li class="linked"><a href="#"><i class="icon-linkedin"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Single Team Style1-->
+
+                </div>
+            </div>
+        </section>
         <section class="team-style1-area">
             <div class="container">
                 <div class="row">
@@ -1883,201 +1987,137 @@
         <section class="slogan-style1-area">
             <div class="auto-container">
                 <div class="slogan-style1">
+                    <!-- Background Images -->
                     <div class="slogan-style1__bg1"
                         style="background-image: url(assets/images/resources/slogan-style1-bg-1.jpg);"></div>
                     <div class="slogan-style1__bg2"
                         style="background-image: url(assets/images/resources/slogan-style1-bg-2.jpg);"></div>
+
                     <div class="container">
                         <div class="slogan-style1__inner">
+
+                            <!-- Title -->
                             <div class="title">
-                                <h2><span>Register!..</span> to study in Next Academic Year 2022.</h2>
+                                <h2>
+                                    <span>Subscribe</span> Our School Newsletter
+                                </h2>
+                                <p class="text-white">Get latest updates, notices, events & announcements directly in
+                                    your inbox.</p>
                             </div>
+
+                            <!-- Newsletter Form -->
                             <div class="button-box">
-                                <a class="btn-one" href="#"><span class="txt">Register Now</span></a>
+                                <form class="newsletter-form d-flex flex-wrap align-items-center gap-2">
+                                    <input type="email" class="form-control form-control-lg shadow-sm mb-2"
+                                        placeholder="Enter your email address" required>
+                                    <button type="submit" class="btn-one">
+                                        <span class="txt">Subscribe</span>
+                                    </button>
+                                </form>
+
                             </div>
+
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+
         <!--End Slogan Style1 Area-->
 
-
         <div class="bottom-parallax">
-            <!--Start footer area -->
             <footer class="footer-area">
-                <!--Start Footer-->
+
+                <!-- Main Footer -->
                 <div class="footer">
                     <div class="container">
                         <div class="row text-right-rtl">
 
-                            <!--Start single footer widget-->
+                            <!-- Logo & About -->
+                            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
+                                <div class="single-footer-widget marbtm50">
+                                    <img src="assets/images/footer/footer-logo.png" alt="School Logo" class="logo">
+
+                                    <div class="our-company-info">
+                                        <p>
+                                            Creative Education School is dedicated to academic excellence,
+                                            values, and holistic development.
+                                        </p>
+
+                                        <div class="footer-social">
+                                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                            <a href="#"><i class="fab fa-instagram"></i></a>
+                                            <a href="#"><i class="fab fa-youtube"></i></a>
+                                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Academics -->
                             <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
                                 <div class="single-footer-widget marbtm50">
                                     <div class="title">
-                                        <div class="dotted"></div>
-                                        <h3>Our Campus</h3>
+                                        <h3>Academics</h3>
                                     </div>
-                                    <div class="our-company-info">
-                                        <div class="text-box">
-                                            <p>Trouble that are bound to ensue equal blame belongs to those all
-                                                fail their duty we like best every pleasure is to welcomed.</p>
-                                        </div>
-                                        <ul>
-                                            <li>
-                                                <div class="icon">
-                                                    <span class="icon-map"></span>
-                                                </div>
-                                                <div class="text">
-                                                    <a href="#">Campus Map</a>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="icon">
-                                                    <span class="icon-chat"></span>
-                                                </div>
-                                                <div class="text">
-                                                    <a href="contact.html">Request for Consult</a>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
+                                    <ul class="footer-links">
+                                        <li><a href="#">Pre Primary</a></li>
+                                        <li><a href="#">Primary School</a></li>
+                                        <li><a href="#">Middle School</a></li>
+                                        <li><a href="#">Senior Secondary</a></li>
+                                    </ul>
                                 </div>
                             </div>
-                            <!--End single footer widget-->
 
-                            <!--Start single footer widget-->
+                            <!-- Admissions -->
                             <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
-                                <div class="single-footer-widget single-footer-widget--link-box marbtm50">
+                                <div class="single-footer-widget marbtm50">
                                     <div class="title">
-                                        <div class="dotted"></div>
-                                        <h3>Academic Life</h3>
-                                    </div>
-                                    <div class="footer-widget-links">
-                                        <ul>
-                                            <li>
-                                                <a href="#">
-                                                    <span class="icon-right-arrow-2"></span>IB & Subject
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#">
-                                                    <span class="icon-right-arrow-2"></span>Learning Culture
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#">
-                                                    <span class="icon-right-arrow-2"></span>Teaching & Learning Support
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#">
-                                                    <span class="icon-right-arrow-2"></span>Student Research
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#">
-                                                    <span class="icon-right-arrow-2"></span>University Guidance
-                                                </a>
-                                            </li>
-
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--End single footer widget-->
-
-                            <!--Start single footer widget-->
-                            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
-                                <div class="single-footer-widget single-footer-widget--link-box">
-                                    <div class="title">
-                                        <div class="dotted"></div>
                                         <h3>Admissions</h3>
                                     </div>
-                                    <div class="footer-widget-links">
-                                        <ul>
-                                            <li>
-                                                <a href="about.html">
-                                                    <span class="icon-right-arrow-2"></span>About Admission
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#">
-                                                    <span class="icon-right-arrow-2"></span>How to Apply
-                                                    <sup>*[Open]</sup>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#">
-                                                    <span class="icon-right-arrow-2"></span>Scholarship
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#">
-                                                    <span class="icon-right-arrow-2"></span>Nomination & Acceptance
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#">
-                                                    <span class="icon-right-arrow-2"></span>Question & Answer
-                                                </a>
-                                            </li>
-
-                                        </ul>
-                                    </div>
+                                    <ul class="footer-links">
+                                        <li><a href="#">Admission Process</a></li>
+                                        <li><a href="#">How to Apply</a></li>
+                                        <li><a href="#">Fee Structure</a></li>
+                                        <li><a href="#">Scholarships</a></li>
+                                    </ul>
                                 </div>
                             </div>
-                            <!--End single footer widget-->
 
-                            <!--Start single footer widget-->
+                            <!-- Contact -->
                             <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
-                                <div class="single-footer-widget pdtop50">
+                                <div class="single-footer-widget">
                                     <div class="title">
-                                        <div class="dotted"></div>
                                         <h3>Get in Touch</h3>
                                     </div>
-                                    <div class="footer-widget-contact-info">
-                                        <p>Educamb University 6500 NW Brook Park Drive Jacksonville, USA
-                                            32034.</p>
-                                        <ul>
-                                            <li><a href="tel:123456789">815-641-5000</a></li>
-                                            <li><a href="mailto:yourmail@email.com">support@educamb.com</a></li>
-                                        </ul>
-                                    </div>
+                                    <p>Jaipur, Rajasthan, India</p>
+                                    <p><a href="tel:8156415000">815-641-5000</a></p>
+                                    <p><a href="mailto:info@creativeschool.com">info@creativeschool.com</a></p>
                                 </div>
                             </div>
-                            <!--End single footer widget-->
 
                         </div>
                     </div>
                 </div>
-                <!--End Footer-->
 
+                <!-- Footer Bottom -->
                 <div class="footer-bottom">
                     <div class="container">
                         <div class="bottom-inner">
-                            <div class="copyright">
-                                <p>Copyright &copy; 2022 <a href="index.html">Educamb.</a> All Rights Reserved.</p>
-                            </div>
-                            <div class="footer-logo-style1">
-                                <a href="index.html">
-                                    <img src="assets/images/footer/footer-logo.png" alt="Awesome Logo" title="">
+                            <p>
+                                © 2026 Creative Education. All Rights Reserved. |
+                                Designed by
+                                <a href="https://abhishekdm.com/" target="_blank">
+                                    Abhishek Digital Marketing Agency
                                 </a>
-                            </div>
-                            <div class="footer-menu">
-                                <ul>
-                                    <li><a href="#">Privacy Policy</a></li>
-                                    <li><a href="#">Term Of Use</a></li>
-                                    <li><a href="#">Support</a></li>
-                                </ul>
-                            </div>
+                            </p>
                         </div>
                     </div>
                 </div>
 
             </footer>
-            <!--End footer area-->
         </div>
+
 
 
         <button class="scroll-top scroll-to-target" data-target="html">
@@ -2090,7 +2130,7 @@
             <div class="popup-inner">
                 <div class="overlay-layer"></div>
                 <div class="search-form">
-                    <form method="post" action="https://st.ourhtmldemo.com/new/educamb/index.html">
+                    <form method="post" action="https://st.ourhtmldemo.com/new/educamb/#">
                         <div class="form-group">
                             <fieldset>
                                 <input type="search" class="form-control" name="search-input" value=""
@@ -2101,17 +2141,40 @@
                     </form>
                     <h3>Recent Search Keywords</h3>
                     <ul class="recent-searches">
-                        <li><a href="index.html">Campus</a></li>
-                        <li><a href="index.html">Event</a></li>
-                        <li><a href="index.html">Research</a></li>
-                        <li><a href="index.html">Training</a></li>
-                        <li><a href="index.html">Education</a></li>
+                        <li><a href="#">Campus</a></li>
+                        <li><a href="#">Event</a></li>
+                        <li><a href="#">Research</a></li>
+                        <li><a href="#">Training</a></li>
+                        <li><a href="#">Education</a></li>
                     </ul>
                 </div>
             </div>
         </div>
         <!-- search-popup end -->
     </div>
+    <!-- donation start -->
+    <a href="donate.php" class="donate-btn">
+        Donate Now
+    </a>
+    <!-- donation end -->
+
+    <!-- whatsapp start -->
+    <a href="https://wa.me/+91" target="_blank" rel="noreferrer" class="floating-btn whatsapp-btn ">
+        <!-- <i class="icon-whatsapp"></i> -->
+        <img src="assets/images/whatsapp.webp" alt="whatsapp" loading="lazy">
+    </a>
+    <!-- whatsapp end -->
+
+    <!-- phone start -->
+    <a href="callto:+91" target="_blank" rel="noreferrer" class="floating-btn phone-btn ">
+        <img loading="lazy" src="assets/images/imgi_4_call.gif" alt="">
+    </a>
+    <!-- phone end -->
+
+    <!-- cursor start -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-ring"></div>
+    <!-- cursor end -->
 
 
 
@@ -2155,4 +2218,5 @@
 
 
 <!-- Mirrored from st.ourhtmldemo.com/new/educamb/about.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 30 Dec 2025 10:21:26 GMT -->
+
 </html>
