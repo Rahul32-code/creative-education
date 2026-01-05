@@ -62,7 +62,7 @@ body {
     line-height: 28px;
     font-weight: 400;
     font-family: var(--thm-font);
-    cursor: none;
+    
 }
 
 /* Dot */
@@ -75,6 +75,7 @@ body {
   pointer-events: none;
   z-index: 1000;
   transform: translate(-50%, -50%);
+  visibility: hidden;
 }
 
 /* RING */
@@ -87,6 +88,7 @@ body {
   pointer-events: none;
   z-index: 999;
   transform: translate(-50%, -50%);
+  visibility: hidden;
 }
 
 button:focus {
@@ -240,6 +242,17 @@ textarea:focus {
     width: 55px;
     height: 180px;
     font-size: 20px;
+  }
+}
+@media (min-width: 992px) {
+  body {
+    cursor: none;
+  }
+  .cursor-ring {
+    visibility: visible;
+  }
+  .cursor-dot {
+    visibility: visible;
   }
 }
 
