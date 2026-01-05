@@ -15113,7 +15113,7 @@ select:focus {
     display: block;
     overflow: hidden;
     transition: all 0.2s ease;
-    width: 270px;
+    /* width: 270px; */
     margin: 0 auto 30px;
 }
 

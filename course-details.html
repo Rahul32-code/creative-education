@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
-<!-- Mirrored from st.ourhtmldemo.com/new/educamb/academy-course-details.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 30 Dec 2025 10:22:13 GMT -->
 <head>
     <meta charset="UTF-8">
     <title>Educamb - The Multi-Purpose HTML5 Template</title>
@@ -17,8 +15,8 @@
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;400;500;700;900&amp;display=swap"
         rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap"
-        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
 
 
 
@@ -56,18 +54,133 @@
 
     <link href="assets/css/color/theme-color.css" id="jssDefault" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/color-2.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
     <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon3/apple-touch-icon.png">
-    <link rel="icon" type="image/png" href="assets/images/favicon3/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="assets/images/favicon3/favicon-16x16.png" sizes="16x16">
+    <!-- <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="assets/images/favicon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="assets/images/favicon/favicon-16x16.png" sizes="16x16"> -->
 
     <!-- Fixing Internet Explorer-->
     <!--[if lt IE 9]>
         <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
         <script src="assets/js/html5shiv.js"></script>
     <![endif]-->
+    <style>
+        /* RESET ISSUES */
+        .bottom-parallax,
+        .footer-area,
+        .footer {
+            overflow: visible !important;
+        }
+
+        /* MAIN FOOTER */
+        .footer {
+            background: #0b1c2d;
+            padding: 120px 0;
+            color: #cfd8e3;
+        }
+
+        .single-footer-widget h3 {
+            color: #fff;
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        /* LINKS */
+        .footer-links {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+
+        .footer-links a {
+            color: #cfd8e3;
+            text-decoration: none;
+        }
+
+        .footer-links a:hover {
+            color: #ffc107;
+        }
+
+        /* SOCIAL */
+        .footer-social a {
+            display: inline-flex;
+            width: 36px;
+            height: 36px;
+            background: rgba(255, 255, 255, 0.1);
+            color: #fff;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            margin-right: 8px;
+        }
+
+        .footer-social a:hover {
+            background: #ffc107;
+            color: #000;
+        }
+
+        /* FOOTER BOTTOM (IMPORTANT) */
+        .footer-bottom {
+            background: #071420;
+            padding: 15px 0;
+            text-align: center;
+            display: block;
+            width: 100%;
+            position: relative;
+            z-index: 99;
+        }
+
+        .footer-bottom p {
+            margin: 0;
+            font-size: 14px;
+            color: #cfd8e3;
+        }
+
+        .footer-bottom a {
+            color: #ffc107;
+            text-decoration: none;
+        }
+
+        .statements-style2-area {
+            padding: 80px 0;
+            background: #f8f9fc;
+        }
+
+        .statement-card {
+            background: #ffffff;
+            padding: 35px;
+            border-radius: 12px;
+            height: 100%;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            transition: 0.3s ease;
+        }
+
+        .statement-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .statement-card h3 {
+            font-size: 22px;
+            margin-bottom: 15px;
+            color: #0b1c2d;
+        }
+
+        .statement-card p {
+            font-size: 16px;
+            line-height: 1.7;
+            color: #555;
+        }
+
+        .statement-card .icon-holder {
+            font-size: 40px;
+            color: #eea412;
+            margin-bottom: 15px;
+        }
+    </style>
 
 </head>
 
@@ -99,11 +212,17 @@
                             <span data-text-preloader="a" class="letters-loading">
                                 a
                             </span>
-                            <span data-text-preloader="m" class="letters-loading">
-                                m
+                            <span data-text-preloader="t" class="letters-loading">
+                                t
                             </span>
-                            <span data-text-preloader="b" class="letters-loading">
-                                b
+                            <span data-text-preloader="i" class="letters-loading">
+                                i
+                            </span>
+                            <span data-text-preloader="o" class="letters-loading">
+                                o
+                            </span>
+                            <span data-text-preloader="n" class="letters-loading">
+                                n
                             </span>
                         </div>
                     </div>
@@ -112,166 +231,120 @@
         </div>
         <!-- preloader end -->
 
-        <!-- Start sidebar widget content -->
-        <div class="xs-sidebar-group info-group info-sidebar">
-            <div class="xs-overlay xs-bg-black"></div>
-            <div class="xs-sidebar-widget">
-                <div class="sidebar-widget-container">
-                    <div class="widget-heading">
-                        <a href="#" class="close-side-widget">X</a>
-                    </div>
-                    <div class="sidebar-textwidget">
-                        <div class="sidebar-info-contents">
-                            <div class="content-inner">
-                                <div class="logo">
-                                    <a href="index.html">
-                                        <img src="assets/images/resources/sidebar-content-logo-1.png" alt="" />
-                                    </a>
-                                </div>
-                                <div class="content-box">
-                                    <h4>About Us</h4>
-                                    <div class="inner-text">
-                                        <p>
-                                            Righteous indignation and dislikes men
-                                            who are beguiled demoralized all the
-                                            charms of pleasure of the moments so
-                                            blinded by desire foresee.
-                                        </p>
-                                    </div>
-                                </div>
+        <!-- page-direction -->
+        <!-- <div class="page_direction" style="display: none;">
+            <div class="demo-rtl direction_switch"><button class="rtl">RTL</button></div>
+            <div class="demo-ltr direction_switch"><button class="ltr">LTR</button></div>
+        </div> -->
+        <!-- page-direction end -->
 
-                                <div class="form-inner">
-                                    <h4>Get a free quote</h4>
-                                    <form action="https://st.ourhtmldemo.com/new/educamb/index.html" method="post">
-                                        <div class="form-group">
-                                            <input type="text" name="name" placeholder="Name" required="">
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="email" name="email" placeholder="Email" required="">
-                                        </div>
-                                        <div class="form-group">
-                                            <textarea name="message" placeholder="Message..."></textarea>
-                                        </div>
-                                        <div class="form-group message-btn">
-                                            <button type="submit" class="btn-one btn-one--style4">
-                                                <span class="txt">Submit Now</span>
-                                            </button>
-                                        </div>
-                                    </form>
-                                </div>
-
-                                <div class="sidebar-contact-info">
-                                    <h4>Contact Info</h4>
-                                    <ul>
-                                        <li>
-                                            <span class="flaticon-map"></span> Chicago 12, Melborne City, USA
-                                        </li>
-                                        <li>
-                                            <span class="flaticon-telephone"></span>
-                                            <a href="tel:+8801682648101">+88 01682648101</a>
-                                        </li>
-                                        <li>
-                                            <span class="flaticon-email"></span>
-                                            <a href="mailto:info@example.com">info@example.com</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="thm-social-link1">
-                                    <ul class="social-box">
-                                        <li class="facebook">
-                                            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                                        </li>
-                                        <li class="twitter">
-                                            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                                        </li>
-                                        <li class="linkedin">
-                                            <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                                        </li>
-                                        <li class="gplus">
-                                            <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- End sidebar widget content -->
 
         <!-- Main header-->
-        <header class="main-header header-style-three">
+        <header class="main-header header-style-one">
 
-            <!--Start Header Top Style3-->
-            <div class="header-top-style3">
+            <!--Start Header Top-->
+            <div class="header-top">
                 <div class="auto-container">
                     <div class="outer-box">
-
-                        <div class="header-top-style3-left">
-                            <div class="main-logo-box-style3">
-                                <a href="index.html">
-                                    <img src="assets/images/resources/logo-3.png" alt="Awesome Logo" title="">
-                                </a>
+                        <div class="header-top-left">
+                            <!-- <div class="info-box">
+                                <span class="icon-info"></span>
+                                <p>Info for</p>
                             </div>
-                            <div class="side-content-button-style1">
-                                <a class="navSidebar-button" href="#">
-                                    <span class="icon-menu"></span>
-                                    <p>Explore</p>
-                                </a>
+                            <div class="select-box">
+                                <select class="wide" id="info">
+                                    <option data-display="">Students</option>
+                                    <option value="1">Teacher</option>
+                                    <option value="2">Students</option>
+                                </select>
+                            </div> -->
+                            <div class="subscribe-box">
+                                <div class="icon">
+                                    <span class="icon-email"></span>
+                                </div>
+                                <a href="#">Subscribe Us</a>
                             </div>
-                            <div class="serach-button-style2">
-                                <input type="search" class="form-control" name="search-input" value=""
-                                    placeholder="What do you want to learn?" required="">
-                                <button type="button">
-                                    <i class="icon-zoom"></i>
-                                </button>
-                            </div>
-                        </div>
-
-                        <div class="header-top-style3-right">
-                            <div class="option-select-box">
-                                <ul>
+                            <div class="social-link-box-style1">
+                                <div class="icon">
+                                    <span class="icon-share"></span>
+                                </div>
+                                <p>Follow</p>
+                                <ul class="clearfix">
                                     <li>
-                                        <div class="single-box">
-                                            <input type="radio" name="programs" id="enterprise" checked="">
-                                            <label for="enterprise"><span></span>
-                                                For Enterprise
-                                            </label>
-                                        </div>
+                                        <a href="#"><i class="icon-facebook-app-symbol"></i></a>
                                     </li>
                                     <li>
-                                        <div class="single-box">
-                                            <input type="radio" name="programs" id="students">
-                                            <label for="students"><span></span>
-                                                For Students
-                                            </label>
-                                        </div>
+                                        <a href="#"><i class="icon-youtube"></i></a>
                                     </li>
                                 </ul>
                             </div>
-                            <div class="header-top-style3-right__btn">
-                                <a class="btn-one" href="#">
-                                    <span class="txt"><i class="icon-key"></i> Log in</span>
-                                </a>
-                                <a class="btn-one" href="#">
-                                    <span class="txt"><i class="icon-right-arrow-1"></i> Free Trial</span>
-                                </a>
+                        </div>
+
+                        <div class="header-top-right">
+                            <div class="quick-link-box">
+                                <div class="inner-title">
+                                    <span class="icon-launch"></span>
+                                    <p>Quick Links</p>
+                                </div>
+                                <div class="link-box">
+                                    <ul>
+                                        <li>
+                                            <a href="#">
+                                                <span class="icon-account"
+                                                    style="display:inline-block;margin-right:5px;"></span>
+                                                Login
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
 
                     </div>
                 </div>
             </div>
-            <!--End Header Top Style3-->
+            <!--End Header Top-->
 
-            <!--Start Header Style3-->
-            <div class="header-style3">
+            <!--Start Header-->
+            <div class="header">
                 <div class="auto-container">
                     <div class="outer-box">
 
+                        <!--Start Header Left-->
+                        <!-- <div class="header-left">
+                            <div class="language-select-box">
+                                <div class="icon">
+                                    <span class="icon-web"></span>
+                                </div>
+                                <form action="#" class="language-switcher">
+                                    <select class="selectpicker">
+                                        <option value="1">Eng</option>
+                                        <option value="2">Fre</option>
+                                        <option value="3">Ita</option>
+                                        <option value="4">Spa</option>
+                                    </select>
+                                </form>
+                            </div>
+                            <div class="serach-button-style1 marleft30">
+                                <button type="button" class="search-toggler">
+                                    <i class="icon-zoom"></i>
+                                    Search
+                                </button>
+                            </div>
+                        </div> -->
+                        <!--End Header Left-->
+
+                        <!--Start Header Left-->
                         <div class="header-middle">
+                            <div class="main-logo-box">
+                                <a href="#">
+                                    <img src="assets/images/resources/logo.png" alt="Awesome Logo" class="logo"
+                                        title="">
+                                </a>
+                            </div>
+
                             <div class="nav-outer style1 clearfix">
+
                                 <!--Mobile Navigation Toggler-->
                                 <div class="mobile-nav-toggler">
                                     <div class="inner">
@@ -281,135 +354,111 @@
                                     </div>
                                 </div>
                                 <!-- Main Menu -->
-                                <nav class="main-menu style3 navbar-expand-md navbar-light">
+                                <nav class="main-menu style1 navbar-expand-md navbar-light">
 
                                     <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
                                         <ul class="navigation clearfix">
-                                            <li class="dropdown megamenu"><a href="#">Home</a>
-                                                <ul class="mega_menuv2">
-                                                    <div class="row">
-                                                      <div class="col">
-                                                        <a href="index.html" class="mfbox">
-                                                            <img src="assets/images/home/1/home-1.jpg" class="img-fluid" alt="img" />
-                                                        </a>
-                                                        <div class="arrow">University Demo <i class="fa fa-angle-right"></i></div>
-                                                      </div>
-                                                      <div class="col">
-                                                        <a href="index-2.html" class="mfbox">
-                                                            <img src="assets/images/home/2/home-4.jpg" class="img-fluid" alt="img" />
-                                                        </a>
-                                                        <div class="arrow">Kindergarten Demo <i class="fa fa-angle-right"></i></div>
-                                                      </div>
-                                                      <div class="col">
-                                                        <a href="index-3.html" class="mfbox">
-                                                            <img src="assets/images/home/3/home-2.jpg" class="img-fluid" alt="img" />
-                                                        </a>
-                                                        <div class="arrow">Academy  Demo <i class="fa fa-angle-right"></i></div>
-                                                      </div>
-                                                      <div class="col">
-                                                        <a href="index-4.html" class="mfbox">
-                                                            <img src="assets/images/home/4/home-3.jpg" class="img-fluid" alt="img" />
-                                                        </a>
-                                                        <div class="arrow">Instructor  Demo <i class="fa fa-angle-right"></i></div>
-                                                      </div>
-                                                      <div class="col">
-                                                        <a href="index-5.html" class="mfbox">
-                                                            <img src="assets/images/home/5/home-10.jpg" class="img-fluid" alt="img" />
-                                                        </a>
-                                                        <div class="arrow">Marketplace  Demo <i class="fa fa-angle-right"></i></div>
-                                                      </div>
-                                                    </div>
-                                                    <div class="row">
-                                                      <div class="col">
-                                                        <a href="index-6.html" class="mfbox">
-                                                            <img src="assets/images/home/6/home-9.jpg" class="img-fluid" alt="img" />
-                                                        </a>
-                                                        <div class="arrow">Single Course  Demo <i class="fa fa-angle-right"></i></div>
-                                                      </div>
-                                                      <div class="col">
-                                                        <a href="index-7.html" class="mfbox">
-                                                            <img src="assets/images/home/7/home-6.jpg" class="img-fluid" alt="img" />
-                                                        </a>
-                                                        <div class="arrow">Cooking Course  Demo <i class="fa fa-angle-right"></i></div>
-                                                      </div>
-                                                      <div class="col">
-                                                        <a href="index-8.html" class="mfbox">
-                                                            <img src="assets/images/home/8/home-7.jpg" class="img-fluid" alt="img" />
-                                                        </a>
-                                                        <div class="arrow">Quiz Learning  Demo <i class="fa fa-angle-right"></i></div>
-                                                      </div>
-                                                      <div class="col">
-                                                        <a href="index-9.html" class="mfbox">
-                                                            <img src="assets/images/home/9/home-5.jpg" class="img-fluid" alt="img" />
-                                                        </a>
-                                                        <div class="arrow">College  Demo <i class="fa fa-angle-right"></i></div>
-                                                      </div>
-                                                      <div class="col">
-                                                        <a href="index-10.html" class="mfbox">
-                                                            <img src="assets/images/home/10/home-8.jpg" class="img-fluid" alt="img" />
-                                                        </a>
-                                                        <div class="arrow">High School  Demo <i class="fa fa-angle-right"></i></div>
-                                                      </div>
-                                                    </div>
-                                                  </ul>
-                                            </li>
-                                            <li><a href="about-3.html">About Us</a></li>
-                                            <li class="dropdown current"><a href="#">Courses</a>
+                                            <li class="current"><a href="#">Home</a></li>
+
+                                            <li class="dropdown"><a href="#">About Us</a>
                                                 <ul>
-                                                    <li>
-                                                        <a href="academy-courses-category.html">
-                                                            Academy Courses Category
-                                                        </a>
+                                                    <li><a href="about.html">About School</a></li>
+                                                    <li><a href="faculty.html">Our faculties</a></li>
+                                                    <!-- <li>
+                                                        <a href="events.html">Events Style 01</a>
                                                     </li>
                                                     <li>
-                                                        <a href="academy-course-details.html">
-                                                            Academy Course Details
-                                                        </a>
+                                                        <a href="events-2.html">Events Style 02</a>
                                                     </li>
                                                     <li>
-                                                        <a href="academy-courses-instructors.html">
-                                                            Academy Courses Instructors
-                                                        </a>
+                                                        <a href="events-3.html">Events Style 03</a>
                                                     </li>
+                                                    <li>
+                                                        <a href="#">Events Details</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="faq.html">Faq’s Page</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="error.html">Error Page</a>
+                                                    </li> -->
                                                 </ul>
                                             </li>
-                                            <li class="dropdown"><a href="#">Academy</a>
+                                            <li class="dropdown"><a href="#">Course</a>
                                                 <ul>
-                                                    <li>
-                                                        <a href="academy-instructor.html">
-                                                            Academy Instructors
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="academy-instructor-details.html">
-                                                            Academy Instructors Details
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="academy-become-instructor.html">
-                                                            Become An Instructor
-                                                        </a>
-                                                    </li>
+                                                    <li><a href="">Python</a></li>
+                                                    <li><a href="">Java</a></li>
                                                 </ul>
                                             </li>
-                                            <li class="dropdown"><a href="#">Blog</a>
+                                            <li class="dropdown"><a href="#">Students</a>
                                                 <ul>
-                                                    <li><a href="blog-1-academy.html">Blog Grid View</a></li>
-                                                    <li><a href="blog-2-academy.html">Blog List View</a></li>
-                                                    <li><a href="blog-3-academy.html">Blog Large View</a></li>
-                                                    <li><a href="blog-single-academy.html">Blog Details</a></li>
+                                                    <li><a href="#">Student Registration</a></li>
+                                                    <li><a href="#">Contact Us</a></li>
+                                                    <li><a href="#">Attendance Verification</a></li>
+                                                    <li><a href="#">Result Verification</a></li>
+                                                    <li><a href="#">Enrollment Verification</a></li>
+                                                    <!-- <li><a href="university-programs.html">University Programs</a></li>
+                                                    <li><a href="programs-detail.html">University Programs Details</a></li> -->
                                                 </ul>
                                             </li>
-                                            <li><a href="contact-3.html">Contact</a></li>
+                                            <li class="blank-box"></li>
+                                            <li class="dropdown"><a href="#">Teachers</a>
+                                                <ul>
+                                                    <li><a href="#">Teacher Login</a></li>
+                                                    <!-- login ke baad dikhenge -->
+                                                    <li><a href="#">Mark Attendance</a></li>
+                                                    <li><a href="#">View Attendance</a></li>
+                                                    <!-- <li><a href="university-programs.html">University Programs</a></li>
+                                                    <li><a href="programs-detail.html">University Programs Details</a></li> -->
+                                                </ul>
+                                            </li>
+                                            <!-- <li><a href="blog.html">Blog</a></li> -->
+                                            <li class="dropdown"><a href="#">News & Notice</a>
+                                                <ul>
+                                                    <!-- <li><a href="blog.html">Blog Grid View</a></li> -->
+                                                    <li><a href="#">Blog List View</a></li>
+                                                    <!-- <li><a href="blog-3.html">Blog Large View</a></li> -->
+                                                    <li><a href="#">Blog Details</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="dropdown">
+                                                <a href="#">Gallery</a>
+                                                <ul>
+                                                    <li><a href="#">Photo Gallery</a></li>
+                                                    <li><a href="#">Video Gallery</a></li>
+                                                    <li><a href="#">Achivements</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="contact.html">Contact</a></li>
                                         </ul>
                                     </div>
-
 
                                 </nav>
                                 <!-- Main Menu End-->
                             </div>
                         </div>
+                        <!--End Header Left-->
 
+                        <!--Start Header Right-->
+                        <!-- <div class="header-right">
+                            <div class="header-right__menu">
+                                <ul>
+                                    <li>
+                                        <div class="icon">
+                                            <span class="icon-account"></span>
+                                        </div>
+                                        <a href="#">Login</a>
+                                    </li>
+                                    <li>
+                                        <div class="icon">
+                                            <span class="icon-more"></span>
+                                        </div>
+                                        <a href="#">Apply Now</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div> -->
+                        <!--End Header Right-->
 
                     </div>
                 </div>
@@ -422,8 +471,8 @@
                     <div class="sticky-header__inner clearfix">
                         <!--Logo-->
                         <div class="logo float-left">
-                            <a href="index.html" class="img-responsive">
-                                <img src="assets/images/resources/sticky-logo-2.png" alt="" title="">
+                            <a href="#" class="img-responsive">
+                                <img src="assets/images/resources/sticky-logo.png" alt="" class="logo" title="">
                             </a>
                         </div>
                         <!--Right Col-->
@@ -444,8 +493,8 @@
                 <div class="close-btn"><span class="icon fa fa-times-circle"></span></div>
                 <nav class="menu-box">
                     <div class="nav-logo">
-                        <a href="index.html">
-                            <img src="assets/images/resources/mobilemenu-logo.png" alt="" title="">
+                        <a href="#">
+                            <img src="assets/images/resources/mobilemenu-logo.png" alt="" class="logo" title="">
                         </a>
                     </div>
                     <div class="menu-outer">
@@ -455,82 +504,33 @@
                     <div class="social-links">
                         <ul class="clearfix">
                             <li><a href="#"><span class="fab fa fa-facebook-square"></span></a></li>
-                            <li><a href="#"><span class="fab fa fa-twitter-square"></span></a></li>
-                            <li><a href="#"><span class="fab fa fa-pinterest-square"></span></a></li>
-                            <li><a href="#"><span class="fab fa fa-google-plus-square"></span></a></li>
                             <li><a href="#"><span class="fab fa fa-youtube-square"></span></a></li>
                         </ul>
                     </div>
                 </nav>
             </div>
             <!-- End Mobile Menu -->
+
         </header>
 
 
         <!--Start breadcrumb area paroller-->
-        <section class="breadcrumb-style3-area">
-            <div class="main-slider-style3__outer-content">
-                <div class="language-select-box language-select-box--style2">
-                    <div class="icon">
-                        <span class="icon-web"></span>
-                    </div>
-                    <form action="#" class="language-switcher">
-                        <select class="selectpicker">
-                            <option value="1">Eng</option>
-                            <option value="2">Fre</option>
-                            <option value="3">Ita</option>
-                            <option value="4">Spa</option>
-                        </select>
-                    </form>
-                </div>
-                <div class="shopping-cart-box">
-                    <a href="#">
-                        <i class="icon-shopping-cart"></i>
-                        <span class="count">3</span>
-                    </a>
-                </div>
-                <div class="border-vertical-line"></div>
-                <div class="breadcrumb-social-link-box">
-                    <div class="breadcrumb-social-share-icon-box">
-                        <div class="icon">
-                            <span class="icon-share-1"></span>
-                        </div>
-                        <ul class="clearfix">
-                            <li>
-                                <a href="#"><i class="icon-facebook-app-symbol"></i></a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="icon-twitter-1"></i></a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="icon-linkedin"></i></a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="icon-youtube"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+        <section class="breadcrumb-area">
+            <div class="breadcrumb-area-bg" style="background-image: url(assets/images/breadcrumb/breadcrumb-1.jpg);">
             </div>
-            <div class="breadcrumb-style3-area__inner">
-                <div class="breadcrumb-style3-area-bg"
-                    style="background-image: url(assets/images/breadcrumb/breadcrumb-3.jpg);">
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xl-12">
-                            <div class="inner-content">
-                                <div class="breadcrumb-menu-style3" data-aos="fade-down" data-aos-easing="linear"
-                                    data-aos-duration="1500">
-                                    <ul>
-                                        <li><a href="index.html">Home</a></li>
-                                        <li><i class="fa fa-angle-right" aria-hidden="true"></i></li>
-                                        <li class="active">Course Details</li>
-                                    </ul>
-                                </div>
-                                <div class="title" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
-                                    <h2>Course Details</h2>
-                                </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="inner-content">
+                            <div class="title" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
+                                <h2>Courses</h2>
+                            </div>
+                            <div class="breadcrumb-menu" data-aos="fade-down" data-aos-easing="linear"
+                                data-aos-duration="1500">
+                                <ul>
+                                    <li><a href="index.html">Home</a></li>
+                                    <li class="active">Course</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
@@ -539,7 +539,8 @@
         </section>
         <!--End breadcrumb area-->
 
-        <!--Start academy course Details Area-->
+
+        <!--Start Statements style2 Area-->
         <section class="academy-course-details-area">
             <div class="container">
                 <div class="row">
@@ -618,8 +619,7 @@
                                                     the charms of pleasure of and trouble that are bound to ensue equal
                                                     blame belongs to those who fail.</p>
                                                 <div class="img-box">
-                                                    <img src="assets/images/academy/course-description-img-1.jpg"
-                                                        alt="">
+                                                    <img src="assets/images/academy/course-description-img-1.jpg" alt="">
                                                 </div>
                                                 <div class="bottom-text">
                                                     <h4>By the end this program, you should be able to:</h4>
@@ -704,64 +704,56 @@
                                                                 <ul>
                                                                     <li>
                                                                         <div class="left">
-                                                                            <a class="video-popup" title="Video Gallery"
-                                                                                href="https://www.youtube.com/watch?v=8K19oXZyAAU">
+                                                                            <a class="video-popup" title="Video Gallery" href="https://www.youtube.com/watch?v=8K19oXZyAAU">
                                                                                 <span class="icon-video-camera"></span>
                                                                                 What is Fibonacci Numbers
                                                                             </a>
                                                                         </div>
                                                                         <div class="right">
                                                                             <p>24min</p>
-                                                                            <a class="video-popup" title="Video Gallery"
-                                                                                href="https://www.youtube.com/watch?v=bO4RoQL9H8I">
+                                                                            <a class="video-popup" title="Video Gallery" href="https://www.youtube.com/watch?v=bO4RoQL9H8I">
                                                                                 Preview
                                                                             </a>
                                                                         </div>
                                                                     </li>
                                                                     <li>
                                                                         <div class="left">
-                                                                            <a class="video-popup" title="Video Gallery"
-                                                                                href="https://www.youtube.com/watch?v=8K19oXZyAAU">
+                                                                            <a class="video-popup" title="Video Gallery" href="https://www.youtube.com/watch?v=8K19oXZyAAU">
                                                                                 <span class="icon-video-camera"></span>
                                                                                 How do you find the Fibonacci sequence?
                                                                             </a>
                                                                         </div>
                                                                         <div class="right">
                                                                             <p>15min</p>
-                                                                            <a class="video-popup" title="Video Gallery"
-                                                                                href="https://www.youtube.com/watch?v=bO4RoQL9H8I">
+                                                                            <a class="video-popup" title="Video Gallery" href="https://www.youtube.com/watch?v=bO4RoQL9H8I">
                                                                                 <span class="icon-padlock"></span>
                                                                             </a>
                                                                         </div>
                                                                     </li>
                                                                     <li>
                                                                         <div class="left">
-                                                                            <a class="video-popup" title="Video Gallery"
-                                                                                href="https://www.youtube.com/watch?v=8K19oXZyAAU">
+                                                                            <a class="video-popup" title="Video Gallery" href="https://www.youtube.com/watch?v=8K19oXZyAAU">
                                                                                 <span class="icon-volume-up"></span>
                                                                                 What is golden ratio in Fibonacci?
                                                                             </a>
                                                                         </div>
                                                                         <div class="right">
                                                                             <p>36min</p>
-                                                                            <a class="video-popup" title="Video Gallery"
-                                                                                href="https://www.youtube.com/watch?v=bO4RoQL9H8I">
+                                                                            <a class="video-popup" title="Video Gallery" href="https://www.youtube.com/watch?v=bO4RoQL9H8I">
                                                                                 <span class="icon-padlock"></span>
                                                                             </a>
                                                                         </div>
                                                                     </li>
                                                                     <li>
                                                                         <div class="left">
-                                                                            <a class="video-popup" title="Video Gallery"
-                                                                                href="https://www.youtube.com/watch?v=8K19oXZyAAU">
+                                                                            <a class="video-popup" title="Video Gallery" href="https://www.youtube.com/watch?v=8K19oXZyAAU">
                                                                                 <span class="icon-video-camera"></span>
                                                                                 Where is Fibonacci used?
                                                                             </a>
                                                                         </div>
                                                                         <div class="right">
                                                                             <p>25min</p>
-                                                                            <a class="video-popup" title="Video Gallery"
-                                                                                href="https://www.youtube.com/watch?v=bO4RoQL9H8I">
+                                                                            <a class="video-popup" title="Video Gallery" href="https://www.youtube.com/watch?v=bO4RoQL9H8I">
                                                                                 <span class="icon-padlock"></span>
                                                                             </a>
                                                                         </div>
@@ -793,64 +785,56 @@
                                                                 <ul>
                                                                     <li>
                                                                         <div class="left">
-                                                                            <a class="video-popup" title="Video Gallery"
-                                                                                href="https://www.youtube.com/watch?v=8K19oXZyAAU">
+                                                                            <a class="video-popup" title="Video Gallery" href="https://www.youtube.com/watch?v=8K19oXZyAAU">
                                                                                 <span class="icon-video-camera"></span>
                                                                                 What is Fibonacci Numbers
                                                                             </a>
                                                                         </div>
                                                                         <div class="right">
                                                                             <p>24min</p>
-                                                                            <a class="video-popup" title="Video Gallery"
-                                                                                href="https://www.youtube.com/watch?v=bO4RoQL9H8I">
+                                                                            <a class="video-popup" title="Video Gallery" href="https://www.youtube.com/watch?v=bO4RoQL9H8I">
                                                                                 Preview
                                                                             </a>
                                                                         </div>
                                                                     </li>
                                                                     <li>
                                                                         <div class="left">
-                                                                            <a class="video-popup" title="Video Gallery"
-                                                                                href="https://www.youtube.com/watch?v=8K19oXZyAAU">
+                                                                            <a class="video-popup" title="Video Gallery" href="https://www.youtube.com/watch?v=8K19oXZyAAU">
                                                                                 <span class="icon-video-camera"></span>
                                                                                 How do you find the Fibonacci sequence?
                                                                             </a>
                                                                         </div>
                                                                         <div class="right">
                                                                             <p>15min</p>
-                                                                            <a class="video-popup" title="Video Gallery"
-                                                                                href="https://www.youtube.com/watch?v=bO4RoQL9H8I">
+                                                                            <a class="video-popup" title="Video Gallery" href="https://www.youtube.com/watch?v=bO4RoQL9H8I">
                                                                                 <span class="icon-padlock"></span>
                                                                             </a>
                                                                         </div>
                                                                     </li>
                                                                     <li>
                                                                         <div class="left">
-                                                                            <a class="video-popup" title="Video Gallery"
-                                                                                href="https://www.youtube.com/watch?v=8K19oXZyAAU">
+                                                                            <a class="video-popup" title="Video Gallery" href="https://www.youtube.com/watch?v=8K19oXZyAAU">
                                                                                 <span class="icon-volume-up"></span>
                                                                                 What is golden ratio in Fibonacci?
                                                                             </a>
                                                                         </div>
                                                                         <div class="right">
                                                                             <p>36min</p>
-                                                                            <a class="video-popup" title="Video Gallery"
-                                                                                href="https://www.youtube.com/watch?v=bO4RoQL9H8I">
+                                                                            <a class="video-popup" title="Video Gallery" href="https://www.youtube.com/watch?v=bO4RoQL9H8I">
                                                                                 <span class="icon-padlock"></span>
                                                                             </a>
                                                                         </div>
                                                                     </li>
                                                                     <li>
                                                                         <div class="left">
-                                                                            <a class="video-popup" title="Video Gallery"
-                                                                                href="https://www.youtube.com/watch?v=8K19oXZyAAU">
+                                                                            <a class="video-popup" title="Video Gallery" href="https://www.youtube.com/watch?v=8K19oXZyAAU">
                                                                                 <span class="icon-video-camera"></span>
                                                                                 Where is Fibonacci used?
                                                                             </a>
                                                                         </div>
                                                                         <div class="right">
                                                                             <p>25min</p>
-                                                                            <a class="video-popup" title="Video Gallery"
-                                                                                href="https://www.youtube.com/watch?v=bO4RoQL9H8I">
+                                                                            <a class="video-popup" title="Video Gallery" href="https://www.youtube.com/watch?v=bO4RoQL9H8I">
                                                                                 <span class="icon-padlock"></span>
                                                                             </a>
                                                                         </div>
@@ -882,64 +866,56 @@
                                                                 <ul>
                                                                     <li>
                                                                         <div class="left">
-                                                                            <a class="video-popup" title="Video Gallery"
-                                                                                href="https://www.youtube.com/watch?v=8K19oXZyAAU">
+                                                                            <a class="video-popup" title="Video Gallery" href="https://www.youtube.com/watch?v=8K19oXZyAAU">
                                                                                 <span class="icon-video-camera"></span>
                                                                                 What is Fibonacci Numbers
                                                                             </a>
                                                                         </div>
                                                                         <div class="right">
                                                                             <p>24min</p>
-                                                                            <a class="video-popup" title="Video Gallery"
-                                                                                href="https://www.youtube.com/watch?v=bO4RoQL9H8I">
+                                                                            <a class="video-popup" title="Video Gallery" href="https://www.youtube.com/watch?v=bO4RoQL9H8I">
                                                                                 Preview
                                                                             </a>
                                                                         </div>
                                                                     </li>
                                                                     <li>
                                                                         <div class="left">
-                                                                            <a class="video-popup" title="Video Gallery"
-                                                                                href="https://www.youtube.com/watch?v=8K19oXZyAAU">
+                                                                            <a class="video-popup" title="Video Gallery" href="https://www.youtube.com/watch?v=8K19oXZyAAU">
                                                                                 <span class="icon-video-camera"></span>
                                                                                 How do you find the Fibonacci sequence?
                                                                             </a>
                                                                         </div>
                                                                         <div class="right">
                                                                             <p>15min</p>
-                                                                            <a class="video-popup" title="Video Gallery"
-                                                                                href="https://www.youtube.com/watch?v=bO4RoQL9H8I">
+                                                                            <a class="video-popup" title="Video Gallery" href="https://www.youtube.com/watch?v=bO4RoQL9H8I">
                                                                                 <span class="icon-padlock"></span>
                                                                             </a>
                                                                         </div>
                                                                     </li>
                                                                     <li>
                                                                         <div class="left">
-                                                                            <a class="video-popup" title="Video Gallery"
-                                                                                href="https://www.youtube.com/watch?v=8K19oXZyAAU">
+                                                                            <a class="video-popup" title="Video Gallery" href="https://www.youtube.com/watch?v=8K19oXZyAAU">
                                                                                 <span class="icon-volume-up"></span>
                                                                                 What is golden ratio in Fibonacci?
                                                                             </a>
                                                                         </div>
                                                                         <div class="right">
                                                                             <p>36min</p>
-                                                                            <a class="video-popup" title="Video Gallery"
-                                                                                href="https://www.youtube.com/watch?v=bO4RoQL9H8I">
+                                                                            <a class="video-popup" title="Video Gallery" href="https://www.youtube.com/watch?v=bO4RoQL9H8I">
                                                                                 <span class="icon-padlock"></span>
                                                                             </a>
                                                                         </div>
                                                                     </li>
                                                                     <li>
                                                                         <div class="left">
-                                                                            <a class="video-popup" title="Video Gallery"
-                                                                                href="https://www.youtube.com/watch?v=8K19oXZyAAU">
+                                                                            <a class="video-popup" title="Video Gallery" href="https://www.youtube.com/watch?v=8K19oXZyAAU">
                                                                                 <span class="icon-video-camera"></span>
                                                                                 Where is Fibonacci used?
                                                                             </a>
                                                                         </div>
                                                                         <div class="right">
                                                                             <p>25min</p>
-                                                                            <a class="video-popup" title="Video Gallery"
-                                                                                href="https://www.youtube.com/watch?v=bO4RoQL9H8I">
+                                                                            <a class="video-popup" title="Video Gallery" href="https://www.youtube.com/watch?v=bO4RoQL9H8I">
                                                                                 <span class="icon-padlock"></span>
                                                                             </a>
                                                                         </div>
@@ -965,8 +941,7 @@
                                                 <ul>
                                                     <li>
                                                         <div class="img-box">
-                                                            <img src="assets/images/academy/course-details-review-1.jpg"
-                                                                alt="">
+                                                            <img src="assets/images/academy/course-details-review-1.jpg" alt="">
                                                         </div>
                                                         <div class="text-box">
                                                             <h4>Thomas Maverick</h4>
@@ -989,8 +964,7 @@
                                                     </li>
                                                     <li>
                                                         <div class="img-box">
-                                                            <img src="assets/images/academy/course-details-review-2.jpg"
-                                                                alt="">
+                                                            <img src="assets/images/academy/course-details-review-2.jpg" alt="">
                                                         </div>
                                                         <div class="text-box">
                                                             <h4>Mia Olivia</h4>
@@ -1013,8 +987,7 @@
                                                     </li>
                                                     <li>
                                                         <div class="img-box">
-                                                            <img src="assets/images/academy/course-details-review-3.jpg"
-                                                                alt="">
+                                                            <img src="assets/images/academy/course-details-review-3.jpg" alt="">
                                                         </div>
                                                         <div class="text-box">
                                                             <h4>Theo Freddie</h4>
@@ -1046,7 +1019,7 @@
                                         <div class="course-details-tab-content-item">
                                             <div class="course-details-faq-content-box">
                                                 <div class="inner-title">
-                                                    <h4>List of Questions & Answers</h4>
+                                                    <h4>List of Questions &amp; Answers</h4>
                                                 </div>
                                                 <ul class="accordion-box">
                                                     <li class="accordion block active-block">
@@ -1144,13 +1117,11 @@
                                     <div class="inner">
                                         <img src="assets/images/academy/course-details-video-gallery-1.jpg" alt="">
                                         <div class="video-gallery-btns-box">
-                                            <a class="video-popup" title="Video Gallery"
-                                                href="https://www.youtube.com/watch?v=bO4RoQL9H8I">
+                                            <a class="video-popup" title="Video Gallery" href="https://www.youtube.com/watch?v=bO4RoQL9H8I">
                                                 <span class="icon-play"></span>
                                             </a>
                                             <p>
-                                                <a class="video-popup" title="Video Gallery"
-                                                    href="https://www.youtube.com/watch?v=bO4RoQL9H8I">
+                                                <a class="video-popup" title="Video Gallery" href="https://www.youtube.com/watch?v=bO4RoQL9H8I">
                                                     Preview Video
                                                 </a>
                                             </p>
@@ -1255,9 +1226,6 @@
                 </div>
             </div>
         </section>
-        <!--End academy course Details Area-->
-
-        <!--Start Related Courses Area-->
         <section class="related-courses-area">
             <div class="container">
                 <div class="inner-title text-center">
@@ -1596,295 +1564,146 @@
                 </div>
             </div>
         </section>
-        <!--End Related Courses Area-->
+        <!--End Team Style1 Area-->
 
-
-
-
-        <!--Start academy Slogan Area-->
-        <section class="academy-slogan-area">
-            <div class="academy-slogan-middle-content">
-                <div class="academy-slogan-middle-content__bg"
-                    style="background-image: url(assets/images/academy/academy-slogan-middle-content-bg.jpg);"></div>
-                <div class="banner-logo-box">
-                    <a href="index-3.html">
-                        <img src="assets/images/resources/banner-logo.png" alt="Awesome Logo" title="">
-                    </a>
-                </div>
-                <div class="phone-box paroller">
-                    <img class="float-bob-y" src="assets/images/resources/phone-1.png" alt="">
-                </div>
-            </div>
+        <!--Start Slogan Style1 Area-->
+        <section class="slogan-style1-area">
             <div class="auto-container">
-                <div class="row">
-                    <div class="col-xl-6">
-                        <div class="academy-slogan-content-one">
-                            <div class="academy-slogan-content-one__bg"
-                                style="background-image: url(assets/images/academy/academy-slogan-content-one-bg.jpg);">
-                            </div>
-                            <div class="academy-slogan-content-one__inner text-center">
-                                <div class="sec-title-style3">
-                                    <div class="sub-title">
-                                        <h5>Think Education</h5>
-                                    </div>
-                                    <h2><span>Change Your</span><br> Life Through Education</h2>
-                                </div>
-                                <div class="btns-box">
-                                    <a class="btn-one btn-one--style4" href="about.html">
-                                        <span class="txt">
-                                            <i class="icon-right-arrow-1"></i>
-                                            Explore Now
-                                        </span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="slogan-style1">
+                    <!-- Background Images -->
+                    <div class="slogan-style1__bg1"
+                        style="background-image: url(assets/images/resources/slogan-style1-bg-1.jpg);"></div>
+                    <div class="slogan-style1__bg2"
+                        style="background-image: url(assets/images/resources/slogan-style1-bg-2.jpg);"></div>
 
-                    <div class="col-xl-6">
-                        <div class="academy-slogan-content-one academy-slogan-content-one--style2">
-                            <div class="academy-slogan-content-one__bg"
-                                style="background-image: url(assets/images/academy/academy-slogan-content-one-bg-2.jpg);">
-                            </div>
-                            <div class="academy-slogan-content-one__inner text-center">
-                                <div class="sec-title-style3">
-                                    <div class="sub-title">
-                                        <h5>Need Help?</h5>
-                                    </div>
-                                    <h2><span>Chat With</span><br> Our Profesionals Directly</h2>
-                                </div>
-                                <div class="btns-box">
-                                    <a class="btn-one btn-one--style4" href="contact.html">
-                                        <span class="txt">
-                                            <i class="icon-right-arrow-1"></i>
-                                            Start Chat
-                                        </span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-        <!--End academy Slogan Area-->
-
-        <!--Start Academy Why Choose Area-->
-        <section class="academy-why-choose-area">
-            <div class="auto-container">
-                <div class="row">
-
-                    <!--Start Single Academy Why Choose Box-->
-                    <div class="col-xl-3 col-lg-6 col-md-6">
-                        <div class="single-academy-why-choose-box">
-                            <div class="icon">
-                                <span class="icon-map-3"></span>
-                            </div>
-                            <div class="text">
-                                <h3>Flexibility</h3>
-                                <p>You can study anytime anywhere</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!--End Single Academy Why Choose Box-->
-
-                    <!--Start Single Academy Why Choose Box-->
-                    <div class="col-xl-3 col-lg-6 col-md-6">
-                        <div class="single-academy-why-choose-box">
-                            <div class="icon">
-                                <span class="icon-reduce-cost"></span>
-                            </div>
-                            <div class="text">
-                                <h3>Lower Costs</h3>
-                                <p>Our Courses are more affordable</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!--End Single Academy Why Choose Box-->
-                    <!--Start Single Academy Why Choose Box-->
-                    <div class="col-xl-3 col-lg-6 col-md-6">
-                        <div class="single-academy-why-choose-box">
-                            <div class="icon">
-                                <span class="icon-harddisk"></span>
-                            </div>
-                            <div class="text">
-                                <h3>Documentation</h3>
-                                <p>All the details will be safely stored</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!--End Single Academy Why Choose Box-->
-                    <!--Start Single Academy Why Choose Box-->
-                    <div class="col-xl-3 col-lg-6 col-md-6">
-                        <div class="single-academy-why-choose-box">
-                            <div class="icon">
-                                <span class="icon-teamwork"></span>
-                            </div>
-                            <div class="text">
-                                <h3>Avoid Commuting</h3>
-                                <p>Learn without the need of traveling</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!--End Single Academy Why Choose Box-->
-
-                </div>
-            </div>
-        </section>
-        <!--End Academy Why Choose Area-->
-
-
-        <div class="bottom-parallax2">
-            <!--Start Footer Style3 Area-->
-            <footer class="footer-style3-area">
-                <!--Start Footer-->
-                <div class="footer-style3">
                     <div class="container">
+                        <div class="slogan-style1__inner">
 
+                            <!-- Title -->
+                            <div class="title">
+                                <h2>
+                                    <span>Subscribe</span> Our School Newsletter
+                                </h2>
+                                <p class="text-white">Get latest updates, notices, events & announcements directly in
+                                    your inbox.</p>
+                            </div>
+
+                            <!-- Newsletter Form -->
+                            <div class="button-box">
+                                <form class="newsletter-form d-flex flex-wrap align-items-center gap-2">
+                                    <input type="email" class="form-control form-control-lg shadow-sm mb-2"
+                                        placeholder="Enter your email address" required>
+                                    <button type="submit" class="btn-one">
+                                        <span class="txt">Subscribe</span>
+                                    </button>
+                                </form>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--End Slogan Style1 Area-->
+
+        <div class="bottom-parallax">
+            <footer class="footer-area">
+
+                <!-- Main Footer -->
+                <div class="footer">
+                    <div class="container">
                         <div class="row text-right-rtl">
-                            <!--Start single footer widget-->
-                            <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
-                                <div class="single-footer-widget-style3 marbtm50">
-                                    <div class="title">
-                                        <h3>Top Categories</h3>
-                                    </div>
-                                    <div class="footer-widget-links-style3">
-                                        <ul>
-                                            <li><a href="#">Photography</a></li>
-                                            <li><a href="#">Language</a></li>
-                                            <li><a href="#">Music</a></li>
-                                            <li><a href="#">Health Wellness</a></li>
-                                            <li><a href="#">Marketing</a></li>
-                                            <li><a href="#">Finance</a></li>
-                                        </ul>
-                                        <ul>
-                                            <li><a href="#">Technology</a></li>
-                                            <li><a href="#">Design</a></li>
-                                            <li><a href="#">Beauty</a></li>
-                                            <li><a href="#">Business</a></li>
-                                            <li><a href="#">Nature</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--End single footer widget-->
 
-                            <!--Start single footer widget-->
-                            <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
-                                <div class="single-footer-widget-style3">
-                                    <div class="title">
-                                        <h3>Useful Links</h3>
-                                    </div>
-                                    <div class="footer-widget-links-style3">
-                                        <ul>
-                                            <li><a href="#">Company</a></li>
-                                            <li><a href="#">Blog</a></li>
-                                            <li><a href="#">Careers</a></li>
-                                            <li><a href="#">Leadership</a></li>
-                                            <li><a href="#">For Enterprise</a></li>
-                                            <li><a href="#">Reviews</a></li>
-                                        </ul>
-                                        <ul>
-                                            <li><a href="#">Faq’s</a></li>
-                                            <li><a href="#">Contact</a></li>
-                                            <li><a href="#">Articles</a></li>
-                                            <li><a href="#">Directory</a></li>
-                                            <li><a href="#">Affiliates</a></li>
-                                            <li><a href="#">Help Centre</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--End single footer widget-->
+                            <!-- Logo & About -->
+                            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
+                                <div class="single-footer-widget marbtm50">
+                                    <img src="assets/images/footer/footer-logo.png" alt="School Logo" class="logo">
 
-                            <!--Start single footer widget-->
-                            <div class="col-xl-4 col-lg-12 col-md-12 col-sm-12">
-                                <div class="single-footer-widget-style3 pdtop50">
-                                    <div class="footer-widget-info-box-style3">
-                                        <h2><span>Checkout Our</span><br> Mobile App, Learn without<br> going
-                                            Anywhere!..</h2>
-                                        <p>Pleasure of the moment so blinded desire.</p>
-                                        <div class="btns-box">
-                                            <a class="btn-one btn-one--style4 google-play" href="#">
-                                                <span class="txt">
-                                                    <i class="icon-play-store"></i>
-                                                    Google Play
-                                                </span>
-                                            </a>
-                                            <a class="apple" href="#"><span class="icon-apple"></span></a>
+                                    <div class="our-company-info">
+                                        <p>
+                                            Creative Education School is dedicated to academic excellence,
+                                            values, and holistic development.
+                                        </p>
+
+                                        <div class="footer-social">
+                                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                            <a href="#"><i class="fab fa-instagram"></i></a>
+                                            <a href="#"><i class="fab fa-youtube"></i></a>
+                                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <!--End single footer widget-->
-                        </div>
 
-                        <div class="row">
-                            <div class="col-xl-12">
-                                <div class="footer-subscribe-box">
-                                    <div class="subscribe-title">
-                                        <span class="icon-mail-1"></span>
-                                        <h3>Newsletter Subscription</h3>
+                            <!-- Academics -->
+                            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
+                                <div class="single-footer-widget marbtm50">
+                                    <div class="title">
+                                        <h3>Academics</h3>
                                     </div>
-                                    <div class="subscribe-box">
-                                        <form class="subscribe-form" action="#">
-                                            <input type="email" name="email" placeholder="Enter Your Email Address...">
-                                            <button class="btn-one btn-one--style4" type="submit">
-                                                <span class="txt">
-                                                    <i class="icon-right-arrow-1"></i>
-                                                    Subscribe
-                                                </span>
-                                            </button>
-                                        </form>
-                                    </div>
+                                    <ul class="footer-links">
+                                        <li><a href="#">Pre Primary</a></li>
+                                        <li><a href="#">Primary School</a></li>
+                                        <li><a href="#">Middle School</a></li>
+                                        <li><a href="#">Senior Secondary</a></li>
+                                    </ul>
                                 </div>
                             </div>
-                        </div>
 
+                            <!-- Admissions -->
+                            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
+                                <div class="single-footer-widget marbtm50">
+                                    <div class="title">
+                                        <h3>Admissions</h3>
+                                    </div>
+                                    <ul class="footer-links">
+                                        <li><a href="#">Admission Process</a></li>
+                                        <li><a href="#">How to Apply</a></li>
+                                        <li><a href="#">Fee Structure</a></li>
+                                        <li><a href="#">Scholarships</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- Contact -->
+                            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
+                                <div class="single-footer-widget">
+                                    <div class="title">
+                                        <h3>Get in Touch</h3>
+                                    </div>
+                                    <p>Jaipur, Rajasthan, India</p>
+                                    <p><a href="tel:8156415000">815-641-5000</a></p>
+                                    <p><a href="mailto:info@creativeschool.com">info@creativeschool.com</a></p>
+                                </div>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
-                <!--End Footer-->
 
-                <div class="footer-bottom-style3">
+                <!-- Footer Bottom -->
+                <div class="footer-bottom">
                     <div class="container">
                         <div class="bottom-inner">
-                            <div class="copyright">
-                                <p>Copyright &copy; 2022 <a href="index.html">Educamb.</a> All Rights Reserved.</p>
-                            </div>
-                            <div class="footer-social-link footer-social-link--style2">
-                                <ul class="clearfix">
-                                    <li>
-                                        <a href="#"><i class="icon-facebook-app-symbol"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="icon-twitter-1"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="icon-linkedin"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="icon-youtube"></i></a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="footer-menu-style3">
-                                <ul>
-                                    <li><a href="#">Privacy Policy</a></li>
-                                    <li><a href="#">Term Of Use</a></li>
-                                    <li><a href="#">Support</a></li>
-                                </ul>
-                            </div>
+                            <p>
+                                © 2026 Creative Education. All Rights Reserved. |
+                                Designed by
+                                <a href="https://abhishekdm.com/" target="_blank">
+                                    Abhishek Digital Marketing Agency
+                                </a>
+                            </p>
                         </div>
                     </div>
                 </div>
 
             </footer>
-            <!--End Footer Style3 Area-->
         </div>
 
 
-        <button class="scroll-top scroll-top--style3 scroll-to-target" data-target="html">
+
+        <button class="scroll-top scroll-to-target" data-target="html">
             <span class="icon-top"></span>
         </button>
 
@@ -1894,7 +1713,7 @@
             <div class="popup-inner">
                 <div class="overlay-layer"></div>
                 <div class="search-form">
-                    <form method="post" action="https://st.ourhtmldemo.com/new/educamb/index.html">
+                    <form method="post" action="https://st.ourhtmldemo.com/new/educamb/#">
                         <div class="form-group">
                             <fieldset>
                                 <input type="search" class="form-control" name="search-input" value=""
@@ -1905,17 +1724,40 @@
                     </form>
                     <h3>Recent Search Keywords</h3>
                     <ul class="recent-searches">
-                        <li><a href="index.html">Campus</a></li>
-                        <li><a href="index.html">Event</a></li>
-                        <li><a href="index.html">Research</a></li>
-                        <li><a href="index.html">Training</a></li>
-                        <li><a href="index.html">Education</a></li>
+                        <li><a href="#">Campus</a></li>
+                        <li><a href="#">Event</a></li>
+                        <li><a href="#">Research</a></li>
+                        <li><a href="#">Training</a></li>
+                        <li><a href="#">Education</a></li>
                     </ul>
                 </div>
             </div>
         </div>
         <!-- search-popup end -->
     </div>
+    <!-- donation start -->
+    <a href="donate.php" class="donate-btn">
+        Donate Now
+    </a>
+    <!-- donation end -->
+
+    <!-- whatsapp start -->
+    <a href="https://wa.me/+91" target="_blank" rel="noreferrer" class="floating-btn whatsapp-btn ">
+        <!-- <i class="icon-whatsapp"></i> -->
+        <img src="assets/images/whatsapp.webp" alt="whatsapp" loading="lazy">
+    </a>
+    <!-- whatsapp end -->
+
+    <!-- phone start -->
+    <a href="callto:+91" target="_blank" rel="noreferrer" class="floating-btn phone-btn ">
+        <img loading="lazy" src="assets/images/imgi_4_call.gif" alt="">
+    </a>
+    <!-- phone end -->
+
+    <!-- cursor start -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-ring"></div>
+    <!-- cursor end -->
 
 
 
@@ -1946,9 +1788,9 @@
 
     <script src="assets/js/jquery-1color-switcher.min.js"></script>
     <script src="assets/js/parallax.min.js"></script>
+    <script src="assets/js/slick.js"></script>
+
     <script src="assets/js/skrollr.min.js"></script>
-    <script src="assets/js/jquery.circleType.js"></script>
-    <script src="assets/js/jquery.lettering.min.js"></script>
 
     <!-- thm custom script -->
     <script src="assets/js/custom.js"></script>
@@ -1958,5 +1800,6 @@
 </body>
 
 
-<!-- Mirrored from st.ourhtmldemo.com/new/educamb/academy-course-details.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 30 Dec 2025 10:22:14 GMT -->
+<!-- Mirrored from st.ourhtmldemo.com/new/educamb/about.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 30 Dec 2025 10:21:26 GMT -->
+
 </html>
