@@ -4507,7 +4507,8 @@ select:focus {
     right: 0;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-position: 0px 100px;
+    /* background-position: 0px 100px; */
+    background-position: center;
     background-size: cover;
     z-index: -1;
 }
@@ -4519,8 +4520,10 @@ select:focus {
     left: 0;
     bottom: 0;
     right: 0;
-    background: rgb(249, 245, 243);
-    background: linear-gradient(90deg, rgba(249, 245, 243, 1) 0%, rgba(249, 245, 243, 1) 0%, rgba(249, 245, 243, 1) 0%, rgba(249, 245, 243, 0.5130427170868348) 0%, rgba(249, 245, 243, 1) 0%, rgba(249, 245, 243, 1) 14%, rgba(249, 245, 243, 0.896796218487395) 27%, rgba(249, 245, 243, 0) 50%);
+    /* background: rgb(249, 245, 243); */
+       background: #0000005e; 
+    backdrop-filter: blur(5px);
+    /* background: linear-gradient(90deg, rgba(249, 245, 243, 1) 0%, rgba(249, 245, 243, 1) 0%, rgba(249, 245, 243, 1) 0%, rgba(249, 245, 243, 0.5130427170868348) 0%, rgba(249, 245, 243, 1) 0%, rgba(249, 245, 243, 1) 14%, rgba(249, 245, 243, 0.896796218487395) 27%, rgba(249, 245, 243, 0) 50%); */
 }
 
 .virtual-store__content {

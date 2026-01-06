@@ -1416,7 +1416,7 @@
         <!--End Research Area-->
 
         <!--Start Virtual Store Area-->
-        <section class="virtual-store-area">
+        <!-- <section class="virtual-store-area">
             <div class="virtual-store-area__bg"
                 style="background-image: url(assets/images/parallax-background/virtual-store-area__bg.jpg);"></div>
             <div class="container">
@@ -1452,7 +1452,164 @@
                     </div>
                 </div>
             </div>
+        </section> -->
+        <style>
+            /* Announcement scroll (left as is) */
+            .announcement-scroll {
+                display: flex;
+                flex-direction: column;
+                animation: scrollUp 12s linear infinite;
+            }
+
+            .announcement-scroll li {
+                flex: none;
+            }
+
+            .announcement-scroll:hover {
+                animation-play-state: paused;
+            }
+
+            @keyframes scrollUp {
+                0% {
+                    transform: translateY(100%);
+                }
+
+                100% {
+                    transform: translateY(-100%);
+                }
+            }
+
+            /* ----- FORM ONLY STYLING START ----- */
+
+            /* Card background with subtle glass effect */
+            .enquiry-card {
+                background: rgba(255, 255, 255, 0.85);
+                /* semi-transparent white */
+                backdrop-filter: blur(8px);
+                /* blur effect behind the form */
+                box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+                /* soft shadow */
+                padding: 30px;
+            }
+
+            /* Floating input fields styling */
+            .enquiry-card .form-control {
+                border-radius: 10px;
+                /* rounded inputs */
+                transition: all 0.3s ease;
+            }
+
+            .enquiry-card .form-control:focus {
+                border-color: #28a745;
+                /* green border on focus */
+                box-shadow: 0 0 0 0.25rem rgba(40, 167, 69, 0.25);
+            }
+
+            /* Submit button styling */
+            .enquiry-card .btn-submit {
+                background: linear-gradient(90deg, #28a745, #20c997);
+                /* gradient button */
+                color: #fff;
+                font-weight: 600;
+                border: none;
+                border-radius: 10px;
+                transition: all 0.3s ease;
+            }
+
+            .enquiry-card .btn-submit:hover {
+                transform: scale(1.05);
+                box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            }
+
+            /* Form title */
+            .enquiry-card h4 {
+                font-weight: 700;
+                margin-bottom: 1.5rem;
+                color: #28a745;
+                text-align: center;
+            }
+
+            /* Optional: rounded floating inputs */
+            .form-control {
+                border-radius: 10px;
+            }
+        </style>
+        <section class="virtual-store-area">
+            <div class="virtual-store-area__bg"
+                style="background-image: url(https://img.freepik.com/premium-photo/back-school_1012565-7810.jpg);">
+            </div>
+            <div class="container">
+                <div class="row g-4">
+
+                    <!-- LEFT: School Highlights -->
+                    <div class="col-xl-4 col-lg-4 my-4">
+                        <div class="card mb-3 shadow-sm">
+                            <div class="card-body">
+                                <h5 class="text-primary">📘 Quality Education</h5>
+                                <p class="text-muted small">Experienced faculty & modern teaching methods.</p>
+                            </div>
+                        </div>
+                        <div class="card mb-3 shadow-sm">
+                            <div class="card-body">
+                                <h5 class="text-success">🏫 Infrastructure</h5>
+                                <p class="text-muted small">Smart classrooms & safe campus for students.</p>
+                            </div>
+                        </div>
+                        <div class="card shadow-sm">
+                            <div class="card-body">
+                                <h5 class="text-warning">🎓 Activities</h5>
+                                <p class="text-muted small">Sports, cultural & academic events throughout year.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CENTER: Announcements -->
+                    <div class="col-xl-4 col-lg-4 my-4">
+                        <div class="card shadow-sm h-100">
+                            <div class="card-body bg-white">
+                                <h5 class="text-danger mb-3">📢 Announcements</h5>
+                                <div class="overflow-hidden" style="height:400px;">
+                                    <ul class="list-group list-group-flush announcement-scroll">
+                                        <li class="list-group-item">Admissions Open (2025–26)</li>
+                                        <li class="list-group-item">PTM on 20 Jan</li>
+                                        <li class="list-group-item">Annual Sports Day – Feb</li>
+                                        <li class="list-group-item">Exam Schedule Released</li>
+                                        <li class="list-group-item">Republic Day Celebration</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- RIGHT: Enquiry Form -->
+                    <div class="col-xl-4 col-lg-4 my-4">
+                        <div class="card enquiry-card">
+                            <h4>Admission Enquiry</h4>
+                            <form>
+                                <div class="form-floating mb-3">
+                                    <input type="text" class="form-control" id="name" placeholder="Full Name" required>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <input type="email" class="form-control" id="email" placeholder="Email" required>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <input type="tel" class="form-control" id="phone" placeholder="Phone" required>
+                                </div>
+                                <div class="form-floating mb-4">
+                                    <textarea class="form-control" placeholder="Message" id="message"
+                                        style="height:120px" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-submit w-100 py-2">Submit Enquiry</button>
+                            </form>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
         </section>
+
         <!--End Virtual Store Area-->
 
         <!--Start Events Style1 Area-->
@@ -1930,143 +2087,142 @@
 
         <style>
             .achievements-area {
-    margin-top: 60px;
-    padding-bottom: 60px;
-}
+                margin-top: 60px;
+                padding-bottom: 60px;
+            }
 
-.sec-title h2 {
-    font-size: 36px;
-    color: #333;
-    font-weight: 600;
-}
+            .sec-title h2 {
+                font-size: 36px;
+                color: #333;
+                font-weight: 600;
+            }
 
-.sub-title p {
-    font-size: 18px;
-    color: #555;
-    margin-bottom: 40px;
-}
+            .sub-title p {
+                font-size: 18px;
+                color: #555;
+                margin-bottom: 40px;
+            }
 
-.swiper-container {
-    width: 100%;
-    height: 300px;
-}
+            .swiper-container {
+                width: 100%;
+                height: 300px;
+            }
 
-.swiper-slide {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-}
+            .swiper-slide {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 10px;
+            }
 
-.achievement-box {
-    text-align: center;
-    background-color: #f4f4f4;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
+            .achievement-box {
+                text-align: center;
+                background-color: #f4f4f4;
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            }
 
-.achievement-box img {
-    max-width: 80px;
-    margin-bottom: 20px;
-}
+            .achievement-box img {
+                max-width: 80px;
+                margin-bottom: 20px;
+            }
 
-.achievement-box p {
-    font-size: 16px;
-    color: #333;
-    font-weight: bold;
-}
+            .achievement-box p {
+                font-size: 16px;
+                color: #333;
+                font-weight: bold;
+            }
 
-/* Optional: Style Pagination dots */
-.swiper-pagination-bullet {
-    background-color: #007bff;
-}
+            /* Optional: Style Pagination dots */
+            .swiper-pagination-bullet {
+                background-color: #007bff;
+            }
 
-/* Optional: Style Navigation Arrows */
-.swiper-button-next,
-.swiper-button-prev {
-    color: #007bff;
-    font-size: 30px;
-}
-
+            /* Optional: Style Navigation Arrows */
+            .swiper-button-next,
+            .swiper-button-prev {
+                color: #007bff;
+                font-size: 30px;
+            }
         </style>
         <!-- funzone start-->
-         <section class="achievements-area">
-    <div class="container">
-        <div class="sec-title text-center">
-            <h2>Our Achievements</h2>
-            <div class="sub-title">
-                <p>We are proud of our milestones and the recognition we've received over the years.</p>
+        <section class="achievements-area">
+            <div class="container">
+                <div class="sec-title text-center">
+                    <h2>Our Achievements</h2>
+                    <div class="sub-title">
+                        <p>We are proud of our milestones and the recognition we've received over the years.</p>
+                    </div>
+                </div>
+
+                <!-- Swiper Slider -->
+                <div class="swiper-container achievements-slider">
+                    <div class="swiper-wrapper">
+                        <!-- Slide 1 -->
+                        <div class="swiper-slide">
+                            <div class="achievement-box">
+                                <img src="https://via.placeholder.com/100" alt="Award 1">
+                                <p>Best School in Innovation</p>
+                            </div>
+                        </div>
+                        <!-- Slide 2 -->
+                        <div class="swiper-slide">
+                            <div class="achievement-box">
+                                <img src="https://via.placeholder.com/100" alt="Award 2">
+                                <p>Excellence in Education Award</p>
+                            </div>
+                        </div>
+                        <!-- Slide 3 -->
+                        <div class="swiper-slide">
+                            <div class="achievement-box">
+                                <img src="https://via.placeholder.com/100" alt="Award 3">
+                                <p>Top Performing STEM School</p>
+                            </div>
+                        </div>
+                        <!-- Slide 4 -->
+                        <div class="swiper-slide">
+                            <div class="achievement-box">
+                                <img src="https://via.placeholder.com/100" alt="Award 4">
+                                <p>Best Performing Arts School</p>
+                            </div>
+                        </div>
+                        <!-- Slide 5 -->
+                        <div class="swiper-slide">
+                            <div class="achievement-box">
+                                <img src="https://via.placeholder.com/100" alt="Award 5">
+                                <p>Top Sports Program Award</p>
+                            </div>
+                        </div>
+                        <!-- Slide 6 -->
+                        <div class="swiper-slide">
+                            <div class="achievement-box">
+                                <img src="https://via.placeholder.com/100" alt="Award 6">
+                                <p>Leader in Sustainability Initiatives</p>
+                            </div>
+                        </div>
+                        <!-- Slide 7 -->
+                        <div class="swiper-slide">
+                            <div class="achievement-box">
+                                <img src="https://via.placeholder.com/100" alt="Award 7">
+                                <p>Community Engagement Excellence</p>
+                            </div>
+                        </div>
+                        <!-- Slide 8 -->
+                        <div class="swiper-slide">
+                            <div class="achievement-box">
+                                <img src="https://via.placeholder.com/100" alt="Award 8">
+                                <p>Best Student Support Services</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Add Pagination (Optional) -->
+                    <div class="swiper-pagination"></div>
+
+                </div>
             </div>
-        </div>
-
-        <!-- Swiper Slider -->
-        <div class="swiper-container achievements-slider">
-            <div class="swiper-wrapper">
-                <!-- Slide 1 -->
-                <div class="swiper-slide">
-                    <div class="achievement-box">
-                        <img src="https://via.placeholder.com/100" alt="Award 1">
-                        <p>Best School in Innovation</p>
-                    </div>
-                </div>
-                <!-- Slide 2 -->
-                <div class="swiper-slide">
-                    <div class="achievement-box">
-                        <img src="https://via.placeholder.com/100" alt="Award 2">
-                        <p>Excellence in Education Award</p>
-                    </div>
-                </div>
-                <!-- Slide 3 -->
-                <div class="swiper-slide">
-                    <div class="achievement-box">
-                        <img src="https://via.placeholder.com/100" alt="Award 3">
-                        <p>Top Performing STEM School</p>
-                    </div>
-                </div>
-                <!-- Slide 4 -->
-                <div class="swiper-slide">
-                    <div class="achievement-box">
-                        <img src="https://via.placeholder.com/100" alt="Award 4">
-                        <p>Best Performing Arts School</p>
-                    </div>
-                </div>
-                <!-- Slide 5 -->
-                <div class="swiper-slide">
-                    <div class="achievement-box">
-                        <img src="https://via.placeholder.com/100" alt="Award 5">
-                        <p>Top Sports Program Award</p>
-                    </div>
-                </div>
-                <!-- Slide 6 -->
-                <div class="swiper-slide">
-                    <div class="achievement-box">
-                        <img src="https://via.placeholder.com/100" alt="Award 6">
-                        <p>Leader in Sustainability Initiatives</p>
-                    </div>
-                </div>
-                <!-- Slide 7 -->
-                <div class="swiper-slide">
-                    <div class="achievement-box">
-                        <img src="https://via.placeholder.com/100" alt="Award 7">
-                        <p>Community Engagement Excellence</p>
-                    </div>
-                </div>
-                <!-- Slide 8 -->
-                <div class="swiper-slide">
-                    <div class="achievement-box">
-                        <img src="https://via.placeholder.com/100" alt="Award 8">
-                        <p>Best Student Support Services</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Add Pagination (Optional) -->
-            <div class="swiper-pagination"></div>
-
-        </div>
-    </div>
-</section>
+        </section>
 
         <!-- funzone end -->
 
