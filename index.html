@@ -328,6 +328,8 @@
                                                 <ul>
                                                     <li><a href="about.html">About School</a></li>
                                                     <li><a href="#">Our faculties</a></li>
+                                                    <li><a href="#">Vission</a></li>
+                                                    <li><a href="#">Mission</a></li>
                                                     <!-- <li>
                                                         <a href="events.html">Events Style 01</a>
                                                     </li>
@@ -2085,144 +2087,172 @@
         </section>
         <!--End Testimonial Style1 Area-->
 
+        <!-- funzone start-->
         <style>
             .achievements-area {
-                margin-top: 60px;
-                padding-bottom: 60px;
+                margin-top: 5rem;
+                position: relative;
+                overflow: hidden;
+                width: 100%;
+                padding: 40px 0;
+                background: #fff9af45;
             }
 
             .sec-title h2 {
-                font-size: 36px;
+                text-align: center;
+                font-size: 30px;
+                font-weight: bold;
                 color: #333;
-                font-weight: 600;
             }
 
-            .sub-title p {
-                font-size: 18px;
-                color: #555;
-                margin-bottom: 40px;
+            .sec-title .sub-title {
+                text-align: center;
+                font-size: 16px;
+                color: #777;
+                margin-top: 10px;
             }
 
-            .swiper-container {
-                width: 100%;
-                height: 300px;
-            }
-
-            .swiper-slide {
+            .swiper-wrapper {
                 display: flex;
+                animation: scrollLeft 30s linear infinite;
+            }
+
+            .achievement-item {
+                width: 250px;
+                height: 150px;
+                background-color: #fff;
+                /* White background for the items */
+                border-radius: 8px;
+                display: flex;
+                flex-direction: column;
                 justify-content: center;
                 align-items: center;
-                padding: 10px;
-            }
-
-            .achievement-box {
-                text-align: center;
-                background-color: #f4f4f4;
-                padding: 20px;
-                border-radius: 10px;
                 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                /* Soft shadow */
+                margin-right: 40px;
+                padding: 15px;
+                text-align: center;
             }
 
             .achievement-box img {
-                max-width: 80px;
-                margin-bottom: 20px;
+                width: 80px;
+                height: 80px;
+                margin-bottom: 15px;
             }
 
-            .achievement-box p {
-                font-size: 16px;
-                color: #333;
+            .achievement-item p {
                 font-weight: bold;
+                font-size: 14px;
+                color: #333;
             }
 
-            /* Optional: Style Pagination dots */
-            .swiper-pagination-bullet {
-                background-color: #007bff;
+            .achievements-slider {
+                overflow: hidden;
+                position: relative;
+
+                /* fade left & right */
+                -webkit-mask-image: linear-gradient(to right,
+                        transparent,
+                        black 15%,
+                        black 85%,
+                        transparent);
+                mask-image: linear-gradient(to right,
+                        transparent,
+                        black 15%,
+                        black 85%,
+                        transparent);
             }
 
-            /* Optional: Style Navigation Arrows */
-            .swiper-button-next,
-            .swiper-button-prev {
-                color: #007bff;
-                font-size: 30px;
+
+            @keyframes scrollLeft {
+                0% {
+                    transform: translateX(0);
+                }
+
+                100% {
+                    transform: translateX(-100%);
+                }
+            }
+
+            .swiper-container {
+                overflow: hidden;
             }
         </style>
-        <!-- funzone start-->
         <section class="achievements-area">
             <div class="container">
-                <div class="sec-title text-center">
+                <div class="sec-title">
                     <h2>Our Achievements</h2>
                     <div class="sub-title">
                         <p>We are proud of our milestones and the recognition we've received over the years.</p>
                     </div>
                 </div>
 
-                <!-- Swiper Slider -->
-                <div class="swiper-container achievements-slider">
+                <div class="swiper-container achievements-slider my-4">
                     <div class="swiper-wrapper">
-                        <!-- Slide 1 -->
-                        <div class="swiper-slide">
+                        <!-- First Set of Achievements -->
+                        <div class="swiper-slide achievement-item">
                             <div class="achievement-box">
                                 <img src="https://via.placeholder.com/100" alt="Award 1">
+                                <h2>same</h2>
                                 <p>Best School in Innovation</p>
                             </div>
                         </div>
-                        <!-- Slide 2 -->
-                        <div class="swiper-slide">
+                        <div class="swiper-slide achievement-item">
                             <div class="achievement-box">
                                 <img src="https://via.placeholder.com/100" alt="Award 2">
+                                <h2>same</h2>
                                 <p>Excellence in Education Award</p>
                             </div>
                         </div>
-                        <!-- Slide 3 -->
-                        <div class="swiper-slide">
+                        <div class="swiper-slide achievement-item">
                             <div class="achievement-box">
                                 <img src="https://via.placeholder.com/100" alt="Award 3">
+                                <h2>same</h2>
                                 <p>Top Performing STEM School</p>
                             </div>
                         </div>
-                        <!-- Slide 4 -->
-                        <div class="swiper-slide">
+                        <div class="swiper-slide achievement-item">
                             <div class="achievement-box">
                                 <img src="https://via.placeholder.com/100" alt="Award 4">
+                                <h2>same</h2>
                                 <p>Best Performing Arts School</p>
                             </div>
                         </div>
-                        <!-- Slide 5 -->
-                        <div class="swiper-slide">
+
+                        <!-- Duplicate Set of Achievements for seamless scrolling -->
+                        <div class="swiper-slide achievement-item">
                             <div class="achievement-box">
-                                <img src="https://via.placeholder.com/100" alt="Award 5">
-                                <p>Top Sports Program Award</p>
+                                <img src="https://via.placeholder.com/100" alt="Award 1">
+                                <h2>same</h2>
+                                <p>Best School in Innovation</p>
                             </div>
                         </div>
-                        <!-- Slide 6 -->
-                        <div class="swiper-slide">
+                        <div class="swiper-slide achievement-item">
                             <div class="achievement-box">
-                                <img src="https://via.placeholder.com/100" alt="Award 6">
-                                <p>Leader in Sustainability Initiatives</p>
+                                <img src="https://via.placeholder.com/100" alt="Award 2">
+                                <h2>same</h2>
+                                <p>Excellence in Education Award</p>
                             </div>
                         </div>
-                        <!-- Slide 7 -->
-                        <div class="swiper-slide">
+                        <div class="swiper-slide achievement-item">
                             <div class="achievement-box">
-                                <img src="https://via.placeholder.com/100" alt="Award 7">
-                                <p>Community Engagement Excellence</p>
+                                <img src="https://via.placeholder.com/100" alt="Award 3">
+                                <h2>same</h2>
+                                <p>Top Performing STEM School</p>
                             </div>
                         </div>
-                        <!-- Slide 8 -->
-                        <div class="swiper-slide">
+                        <div class="swiper-slide achievement-item">
                             <div class="achievement-box">
-                                <img src="https://via.placeholder.com/100" alt="Award 8">
-                                <p>Best Student Support Services</p>
+                                <img src="https://via.placeholder.com/100" alt="Award 4">
+                                <h2>same</h2>
+                                <p>Best Performing Arts School</p>
                             </div>
                         </div>
                     </div>
-
-                    <!-- Add Pagination (Optional) -->
-                    <div class="swiper-pagination"></div>
-
                 </div>
             </div>
         </section>
+
 
         <!-- funzone end -->
 
