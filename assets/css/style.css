@@ -28580,3 +28580,8 @@ ul.hr-nav-toggler-navigation>li:hover>ul {
             .award-card:hover .award-img img {
                 transform: scale(1.1);
             }
+.custom-heading {
+                                                    letter-spacing: 0.5px;
+                                                    font-size: 15px;
+                                                    color: #eea412;
+                                                }
