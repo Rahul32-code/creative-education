@@ -11,11 +11,11 @@
 }
 
 .fact-counter-area .sec-title h2 {
-    color: #ffffff;
+    color: #000;
 }
 
 .fact-counter-area .sec-title .sub-title p {
-    color: #ffffff;
+    color: #333;
 }
 
 
@@ -68,7 +68,7 @@
 
 .single-fact-counter .count-box {
     position: relative;
-    color: #ffffff;
+    color: #000;
     font-size: 48px;
     line-height: 40px;
     font-weight: 700;
@@ -83,7 +83,7 @@
 }
 
 .single-fact-counter h3 {
-    color: #ffffff;
+    color: #544b4b;
     font-size: 22px;
     line-height: 28px;
     font-weight: 700;
