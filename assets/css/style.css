@@ -28301,4 +28301,282 @@ ul.hr-nav-toggler-navigation>li:hover>ul {
   }
 }
 
+        /* RESET ISSUES */
+        .bottom-parallax,
+        .footer-area,
+        .footer {
+            overflow: visible !important;
+        }
 
+        /* MAIN FOOTER */
+        .footer {
+            background: #0b1c2d;
+            padding: 120px 0;
+            color: #cfd8e3;
+        }
+
+        .single-footer-widget h3 {
+            color: #fff;
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        /* LINKS */
+        .footer-links {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+
+        .footer-links a {
+            color: #cfd8e3;
+            text-decoration: none;
+        }
+
+        .footer-links a:hover {
+            color: #ffc107;
+        }
+
+        /* SOCIAL */
+        .footer-social a {
+            display: inline-flex;
+            width: 36px;
+            height: 36px;
+            background: rgba(255, 255, 255, 0.1);
+            color: #fff;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            margin-right: 8px;
+        }
+
+        .footer-social a:hover {
+            background: #ffc107;
+            color: #000;
+        }
+
+        /* FOOTER BOTTOM (IMPORTANT) */
+        .footer-bottom {
+            background: #071420;
+            padding: 15px 0;
+            text-align: center;
+            display: block;
+            width: 100%;
+            position: relative;
+            z-index: 99;
+        }
+
+        .footer-bottom p {
+            margin: 0;
+            font-size: 14px;
+            color: #cfd8e3;
+        }
+
+        .footer-bottom a {
+            color: #ffc107;
+            text-decoration: none;
+        }
+            .achievements-area {
+                margin-top: 5rem;
+                position: relative;
+                overflow: hidden;
+                width: 100%;
+                padding: 40px 0;
+                background: #fff9af45;
+            }
+
+            .sec-title h2 {
+                text-align: center;
+                font-size: 30px;
+                font-weight: bold;
+                color: #333;
+            }
+
+            .sec-title .sub-title {
+                text-align: center;
+                font-size: 16px;
+                color: #777;
+                margin-top: 10px;
+            }
+
+            .swiper-wrapper {
+                display: flex;
+                animation: scrollLeft 30s linear infinite;
+            }
+
+            /* achievement */
+            .achievement-item {
+                width: 250px;
+                height: 150px;
+                background-color: #fff;
+                /* White background for the items */
+                border-radius: 8px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                /* Soft shadow */
+                margin-right: 40px;
+                padding: 15px;
+                text-align: center;
+            }
+
+            .achievement-box img {
+                width: 80px;
+                height: 80px;
+                margin-bottom: 15px;
+            }
+
+            .achievement-item p {
+                font-weight: bold;
+                font-size: 14px;
+                color: #333;
+            }
+
+            .achievements-slider {
+                overflow: hidden;
+                position: relative;
+
+                /* fade left & right */
+                -webkit-mask-image: linear-gradient(to right,
+                        transparent,
+                        black 15%,
+                        black 85%,
+                        transparent);
+                mask-image: linear-gradient(to right,
+                        transparent,
+                        black 15%,
+                        black 85%,
+                        transparent);
+            }
+
+
+            @keyframes scrollLeft {
+                0% {
+                    transform: translateX(0);
+                }
+
+                100% {
+                    transform: translateX(-100%);
+                }
+            }
+
+            .swiper-container {
+                overflow: hidden;
+            }
+
+            /* Announcement scroll (left as is) */
+            .announcement-scroll {
+                display: flex;
+                flex-direction: column;
+                animation: scrollUp 12s linear infinite;
+            }
+
+            .announcement-scroll li {
+                flex: none;
+            }
+
+            .announcement-scroll:hover {
+                animation-play-state: paused;
+            }
+
+            @keyframes scrollUp {
+                0% {
+                    transform: translateY(100%);
+                }
+
+                100% {
+                    transform: translateY(-100%);
+                }
+            }
+
+            /* ----- FORM ONLY STYLING START ----- */
+
+            /* Card background with subtle glass effect */
+            .enquiry-card {
+                background: rgba(255, 255, 255, 0.85);
+                /* semi-transparent white */
+                backdrop-filter: blur(8px);
+                /* blur effect behind the form */
+                box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+                /* soft shadow */
+                padding: 30px;
+            }
+
+            /* Floating input fields styling */
+            .enquiry-card .form-control {
+                border-radius: 10px;
+                /* rounded inputs */
+                transition: all 0.3s ease;
+            }
+
+            .enquiry-card .form-control:focus {
+                border-color: #28a745;
+                /* green border on focus */
+                box-shadow: 0 0 0 0.25rem rgba(40, 167, 69, 0.25);
+            }
+
+            /* Submit button styling */
+            .enquiry-card .btn-submit {
+                background: linear-gradient(90deg, #28a745, #20c997);
+                /* gradient button */
+                color: #fff;
+                font-weight: 600;
+                border: none;
+                border-radius: 10px;
+                transition: all 0.3s ease;
+            }
+
+            .enquiry-card .btn-submit:hover {
+                transform: scale(1.05);
+                box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            }
+
+            /* Form title */
+            .enquiry-card h4 {
+                font-weight: 700;
+                margin-bottom: 1.5rem;
+                color: #28a745;
+                text-align: center;
+            }
+
+            /* Optional: rounded floating inputs */
+            .form-control {
+                border-radius: 10px;
+            }
+
+            .awards-section {
+                background:
+                    radial-gradient(at top left, #ffefc1 0%, transparent 55%),
+                    radial-gradient(at top right, #ffd6a3 0%, transparent 55%),
+                    radial-gradient(at bottom right, #fff3d6 0%, transparent 55%),
+                    #fffdf7;
+            }
+
+            .award-card {
+                border: none;
+                border-radius: 16px;
+                background: #fff;
+                transition: all 0.35s ease;
+                box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+            }
+
+            .award-card:hover {
+                transform: translateY(-8px) scale(1.02);
+                box-shadow: 0 20px 45px rgba(0, 0, 0, 0.15);
+            }
+
+            .award-img img {
+                width: 80px;
+                height: 80px;
+                object-fit: contain;
+                transition: transform 0.35s ease;
+            }
+
+            .award-card:hover .award-img img {
+                transform: scale(1.1);
+            }

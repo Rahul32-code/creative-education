@@ -4063,16 +4063,32 @@
         max-width: 1170px;
         margin: 0 auto 0;
     }
+    .essentials-content-box ul {
+    display: flex;
+    flex-wrap: nowrap;     /* ek hi row */
+    overflow-x: auto;      /* horizontal scroll */
+  }
 
-    .essentials-content-box ul li {
+  .essentials-content-box ul li {
+    width: 140px;          /* 100% hata diya */
+    flex: 0 0 auto;
+    border-bottom: 0;
+    border-right: 1px solid #ede8e6;
+  }
+
+  .essentials-content-box ul li:last-child {
+    border-right: none;
+  }
+
+    /* .essentials-content-box ul li {
         width: 100%;
         border-right: 0px solid #ede8e6;
         border-bottom: 1px solid #ede8e6;
-    }
+    } */
 
-    .essentials-content-box ul li:last-child {
+    /* .essentials-content-box ul li:last-child {
         border-bottom: none;
-    }
+    } */
 
 
 

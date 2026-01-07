@@ -144,6 +144,207 @@
             color: #ffc107;
             text-decoration: none;
         }
+            .achievements-area {
+                margin-top: 5rem;
+                position: relative;
+                overflow: hidden;
+                width: 100%;
+                padding: 40px 0;
+                background: #fff9af45;
+            }
+
+            .sec-title h2 {
+                text-align: center;
+                font-size: 30px;
+                font-weight: bold;
+                color: #333;
+            }
+
+            .sec-title .sub-title {
+                text-align: center;
+                font-size: 16px;
+                color: #777;
+                margin-top: 10px;
+            }
+
+            .swiper-wrapper {
+                display: flex;
+                animation: scrollLeft 30s linear infinite;
+            }
+
+            /* achievement */
+            .achievement-item {
+                width: 250px;
+                height: 150px;
+                background-color: #fff;
+                /* White background for the items */
+                border-radius: 8px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                /* Soft shadow */
+                margin-right: 40px;
+                padding: 15px;
+                text-align: center;
+            }
+
+            .achievement-box img {
+                width: 80px;
+                height: 80px;
+                margin-bottom: 15px;
+            }
+
+            .achievement-item p {
+                font-weight: bold;
+                font-size: 14px;
+                color: #333;
+            }
+
+            .achievements-slider {
+                overflow: hidden;
+                position: relative;
+
+                /* fade left & right */
+                -webkit-mask-image: linear-gradient(to right,
+                        transparent,
+                        black 15%,
+                        black 85%,
+                        transparent);
+                mask-image: linear-gradient(to right,
+                        transparent,
+                        black 15%,
+                        black 85%,
+                        transparent);
+            }
+
+
+            @keyframes scrollLeft {
+                0% {
+                    transform: translateX(0);
+                }
+
+                100% {
+                    transform: translateX(-100%);
+                }
+            }
+
+            .swiper-container {
+                overflow: hidden;
+            }
+
+            /* Announcement scroll (left as is) */
+            .announcement-scroll {
+                display: flex;
+                flex-direction: column;
+                animation: scrollUp 12s linear infinite;
+            }
+
+            .announcement-scroll li {
+                flex: none;
+            }
+
+            .announcement-scroll:hover {
+                animation-play-state: paused;
+            }
+
+            @keyframes scrollUp {
+                0% {
+                    transform: translateY(100%);
+                }
+
+                100% {
+                    transform: translateY(-100%);
+                }
+            }
+
+            /* ----- FORM ONLY STYLING START ----- */
+
+            /* Card background with subtle glass effect */
+            .enquiry-card {
+                background: rgba(255, 255, 255, 0.85);
+                /* semi-transparent white */
+                backdrop-filter: blur(8px);
+                /* blur effect behind the form */
+                box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+                /* soft shadow */
+                padding: 30px;
+            }
+
+            /* Floating input fields styling */
+            .enquiry-card .form-control {
+                border-radius: 10px;
+                /* rounded inputs */
+                transition: all 0.3s ease;
+            }
+
+            .enquiry-card .form-control:focus {
+                border-color: #28a745;
+                /* green border on focus */
+                box-shadow: 0 0 0 0.25rem rgba(40, 167, 69, 0.25);
+            }
+
+            /* Submit button styling */
+            .enquiry-card .btn-submit {
+                background: linear-gradient(90deg, #28a745, #20c997);
+                /* gradient button */
+                color: #fff;
+                font-weight: 600;
+                border: none;
+                border-radius: 10px;
+                transition: all 0.3s ease;
+            }
+
+            .enquiry-card .btn-submit:hover {
+                transform: scale(1.05);
+                box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            }
+
+            /* Form title */
+            .enquiry-card h4 {
+                font-weight: 700;
+                margin-bottom: 1.5rem;
+                color: #28a745;
+                text-align: center;
+            }
+
+            /* Optional: rounded floating inputs */
+            .form-control {
+                border-radius: 10px;
+            }
+
+            .awards-section {
+                background:
+                    radial-gradient(at top left, #ffefc1 0%, transparent 55%),
+                    radial-gradient(at top right, #ffd6a3 0%, transparent 55%),
+                    radial-gradient(at bottom right, #fff3d6 0%, transparent 55%),
+                    #fffdf7;
+            }
+
+            .award-card {
+                border: none;
+                border-radius: 16px;
+                background: #fff;
+                transition: all 0.35s ease;
+                box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+            }
+
+            .award-card:hover {
+                transform: translateY(-8px) scale(1.02);
+                box-shadow: 0 20px 45px rgba(0, 0, 0, 0.15);
+            }
+
+            .award-img img {
+                width: 80px;
+                height: 80px;
+                object-fit: contain;
+                transition: transform 0.35s ease;
+            }
+
+            .award-card:hover .award-img img {
+                transform: scale(1.1);
+            }
     </style>
 
 </head>
@@ -322,14 +523,14 @@
 
                                     <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
                                         <ul class="navigation clearfix">
-                                            <li class="current"><a href="#">Home</a></li>
+                                            <li class="current"><a href="index.html">Home</a></li>
 
                                             <li class="dropdown"><a href="#">About Us</a>
                                                 <ul>
                                                     <li><a href="about.html">About School</a></li>
-                                                    <li><a href="#">Our faculties</a></li>
-                                                    <li><a href="#">Vission</a></li>
-                                                    <li><a href="#">Mission</a></li>
+                                                    <li><a href="faculty.html">Our faculties</a></li>
+                                                    <li><a href="vission.html">Vission</a></li>
+                                                    <li><a href="mission.html">Mission</a></li>
                                                     <!-- <li>
                                                         <a href="events.html">Events Style 01</a>
                                                     </li>
@@ -352,8 +553,8 @@
                                             </li>
                                             <li class="dropdown"><a href="#">Course</a>
                                                 <ul>
-                                                    <li><a href="">Python</a></li>
-                                                    <li><a href="">Java</a></li>
+                                                    <li><a href="course.html">Python</a></li>
+                                                    <li><a href="course.html">Java</a></li>
                                                 </ul>
                                             </li>
                                             <li class="dropdown"><a href="#">Students</a>
@@ -377,7 +578,7 @@
                                                     <li><a href="programs-detail.html">University Programs Details</a></li> -->
                                                 </ul>
                                             </li>
-                                            <li><a href="#">Achivements</a></li>
+                                            <li><a href="achievement.html">Achivements</a></li>
                                             <!-- <li class="dropdown"><a href="#">News & Notice</a>
                                                 <ul>
                                                     <li><a href="#">Blog List View</a></li>
@@ -387,9 +588,9 @@
                                             <li class="dropdown">
                                                 <a href="#">Gallery</a>
                                                 <ul>
-                                                    <li><a href="#">Photo Gallery</a></li>
-                                                    <li><a href="#">Video Gallery</a></li>
-                                                    <li><a href="#">Blog</a></li>
+                                                    <li><a href="photo-gallery.html">Photo Gallery</a></li>
+                                                    <li><a href="video-gallery.html">Video Gallery</a></li>
+                                                    <li><a href="blog.html">Blog</a></li>
                                                 </ul>
                                             </li>
                                             <li><a href="contact.html">Contact</a></li>
@@ -1455,87 +1656,7 @@
                 </div>
             </div>
         </section> -->
-        <style>
-            /* Announcement scroll (left as is) */
-            .announcement-scroll {
-                display: flex;
-                flex-direction: column;
-                animation: scrollUp 12s linear infinite;
-            }
-
-            .announcement-scroll li {
-                flex: none;
-            }
-
-            .announcement-scroll:hover {
-                animation-play-state: paused;
-            }
-
-            @keyframes scrollUp {
-                0% {
-                    transform: translateY(100%);
-                }
-
-                100% {
-                    transform: translateY(-100%);
-                }
-            }
-
-            /* ----- FORM ONLY STYLING START ----- */
-
-            /* Card background with subtle glass effect */
-            .enquiry-card {
-                background: rgba(255, 255, 255, 0.85);
-                /* semi-transparent white */
-                backdrop-filter: blur(8px);
-                /* blur effect behind the form */
-                box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
-                /* soft shadow */
-                padding: 30px;
-            }
-
-            /* Floating input fields styling */
-            .enquiry-card .form-control {
-                border-radius: 10px;
-                /* rounded inputs */
-                transition: all 0.3s ease;
-            }
-
-            .enquiry-card .form-control:focus {
-                border-color: #28a745;
-                /* green border on focus */
-                box-shadow: 0 0 0 0.25rem rgba(40, 167, 69, 0.25);
-            }
-
-            /* Submit button styling */
-            .enquiry-card .btn-submit {
-                background: linear-gradient(90deg, #28a745, #20c997);
-                /* gradient button */
-                color: #fff;
-                font-weight: 600;
-                border: none;
-                border-radius: 10px;
-                transition: all 0.3s ease;
-            }
-
-            .enquiry-card .btn-submit:hover {
-                transform: scale(1.05);
-                box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-            }
-
-            /* Form title */
-            .enquiry-card h4 {
-                font-weight: 700;
-                margin-bottom: 1.5rem;
-                color: #28a745;
-                text-align: center;
-            }
-
-            /* Optional: rounded floating inputs */
-            .form-control {
-                border-radius: 10px;
-            }
-        </style>
+        
         <section class="virtual-store-area">
             <div class="virtual-store-area__bg"
                 style="background-image: url(https://img.freepik.com/premium-photo/back-school_1012565-7810.jpg);">
@@ -2088,97 +2209,8 @@
         <!--End Testimonial Style1 Area-->
 
         <!-- funzone start-->
-        <style>
-            .achievements-area {
-                margin-top: 5rem;
-                position: relative;
-                overflow: hidden;
-                width: 100%;
-                padding: 40px 0;
-                background: #fff9af45;
-            }
-
-            .sec-title h2 {
-                text-align: center;
-                font-size: 30px;
-                font-weight: bold;
-                color: #333;
-            }
-
-            .sec-title .sub-title {
-                text-align: center;
-                font-size: 16px;
-                color: #777;
-                margin-top: 10px;
-            }
-
-            .swiper-wrapper {
-                display: flex;
-                animation: scrollLeft 30s linear infinite;
-            }
-
-            .achievement-item {
-                width: 250px;
-                height: 150px;
-                background-color: #fff;
-                /* White background for the items */
-                border-radius: 8px;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-                /* Soft shadow */
-                margin-right: 40px;
-                padding: 15px;
-                text-align: center;
-            }
-
-            .achievement-box img {
-                width: 80px;
-                height: 80px;
-                margin-bottom: 15px;
-            }
-
-            .achievement-item p {
-                font-weight: bold;
-                font-size: 14px;
-                color: #333;
-            }
-
-            .achievements-slider {
-                overflow: hidden;
-                position: relative;
-
-                /* fade left & right */
-                -webkit-mask-image: linear-gradient(to right,
-                        transparent,
-                        black 15%,
-                        black 85%,
-                        transparent);
-                mask-image: linear-gradient(to right,
-                        transparent,
-                        black 15%,
-                        black 85%,
-                        transparent);
-            }
-
-
-            @keyframes scrollLeft {
-                0% {
-                    transform: translateX(0);
-                }
-
-                100% {
-                    transform: translateX(-100%);
-                }
-            }
-
-            .swiper-container {
-                overflow: hidden;
-            }
-        </style>
-        <section class="achievements-area">
+        
+        <section class="achievements-area awards-section">
             <div class="container">
                 <div class="sec-title">
                     <h2>Our Achievements</h2>
@@ -2504,19 +2536,50 @@
                 </div>
 
                 <!-- Footer Bottom -->
-                <div class="footer-bottom">
-                    <div class="container">
-                        <div class="bottom-inner">
-                            <p>
-                                © 2026 Creative Education. All Rights Reserved. |
-                                Designed by
-                                <a href="https://abhishekdm.com/" target="_blank">
-                                    Abhishek Digital Marketing Agency
-                                </a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
+                <!-- Footer Bottom -->
+<div class="footer-bottom py-3 border-top">
+    <div class="container">
+
+        <div class="row align-items-center text-center text-md-start">
+
+            <!-- Left -->
+            <div class="col-md-6 mb-2 mb-md-0">
+                <p class="mb-0 small">
+                    © 2026 Creative Education. All Rights Reserved.
+                </p>
+            </div>
+
+            <!-- Right -->
+            <div class="col-md-6 text-md-end">
+                <ul class="list-inline mb-0 small">
+                    <li class="list-inline-item">
+                        <a href="#" class="text-decoration-none">Privacy Policy</a>
+                    </li>
+                    <li class="list-inline-item mx-2">|</li>
+                    <li class="list-inline-item">
+                        <a href="#" class="text-decoration-none">Terms & Conditions</a>
+                    </li>
+                    <li class="list-inline-item mx-2">|</li>
+                    <li class="list-inline-item">
+                        <a href="#" class="text-decoration-none">FAQ</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- Designer -->
+        <div class="text-center mt-2">
+            <p class="mb-0 small">
+                Designed by
+                <a href="https://abhishekdm.com/" target="_blank" class="text-decoration-none">
+                    Abhishek Digital Marketing Agency
+                </a>
+            </p>
+        </div>
+
+    </div>
+</div>
 
             </footer>
         </div>
@@ -2616,8 +2679,4 @@
 
 
 </body>
-
-
-<!-- Mirrored from st.ourhtmldemo.com/new/educamb/# by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 30 Dec 2025 10:18:38 GMT -->
-
 </html>
