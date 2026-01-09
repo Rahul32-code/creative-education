@@ -427,70 +427,76 @@
 
 
         <!--Start About Style1 Area-->
-        <section class="about-style1-area">
+        <section class="about-style1-area py-4 py-md-5">
             <div class="container">
 
                 <!-- Section Heading -->
-                <div class="sec-title text-center mb-5">
-                    <h2>Result Verification</h2>
-                    <div class="sub-title">
-                        <p>Enter your roll number and date of birth to view your result.</p>
-                    </div>
+                <div class="sec-title text-center mb-4">
+                    <h2 class="fs-3 fs-md-2">Result Verification</h2>
+                    <p class="text-muted">
+                        Enter your roll number and date of birth to view your result.
+                    </p>
                 </div>
 
                 <div class="row justify-content-center">
-                    <div class="col-xl-8 col-lg-9">
+                    <div class="col-12 col-lg-10 col-xl-8">
 
                         <!-- Result Form -->
-                        <div class="card shadow border-0 p-4 mb-4">
-                            <h4 class="fw-semibold mb-3 text-uppercase">
+                        <div class="card shadow border-0 p-3 p-md-4 mb-4">
+                            <h5 class="fw-semibold mb-3 text-uppercase">
                                 Student Result Form
-                            </h4>
+                            </h5>
 
                             <form>
                                 <div class="row">
-                                    <div class="col-md-6 mb-3">
+                                    <div class="col-12 col-md-6 mb-3">
                                         <label class="form-label fw-semibold">Roll Number</label>
                                         <input type="text" class="form-control" placeholder="Enter Roll Number">
                                     </div>
 
-                                    <div class="col-md-6 mb-3">
+                                    <div class="col-12 col-md-6 mb-3">
                                         <label class="form-label fw-semibold">Date of Birth</label>
                                         <input type="date" class="form-control">
                                     </div>
                                 </div>
 
-                                <button type="button" class="btn btn-primary">
+                                <button type="button" class="btn btn-primary w-100 w-md-auto">
                                     View Result
                                 </button>
                             </form>
                         </div>
 
-                        <!-- Result Sheet (Dummy) -->
-                        <div class="card shadow border-0 p-4">
+                        <!-- Result Sheet -->
+                        <div class="card shadow border-0 p-3 p-md-4">
 
                             <div class="text-center mb-4">
-                                <h3 class="fw-bold mb-1">Creative Public School</h3>
+                                <h4 class="fw-bold mb-1">Creative Public School</h4>
                                 <p class="mb-0 text-muted">Annual Examination Result 2025–26</p>
                             </div>
 
-                            <!-- Student Info -->
-                            <table class="table table-bordered mb-4">
-                                <tbody>
-                                    <tr>
-                                        <th width="30%">Student Name</th>
-                                        <td>Rahul Kumar</td>
-                                        <th width="20%">Roll No</th>
-                                        <td>1025</td>
-                                    </tr>
-                                    <tr>
-                                        <th>Class</th>
-                                        <td>10th (Science)</td>
-                                        <th>Session</th>
-                                        <td>2025–26</td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                            <!-- Student Info (Responsive) -->
+                            <div class="table-responsive-sm">
+                                <table class="table table-bordered mb-4">
+                                    <tbody>
+                                        <tr>
+                                            <th>Student Name</th>
+                                            <td>Rahul Kumar</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Roll No</th>
+                                            <td>1025</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Class</th>
+                                            <td>10th (Science)</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Session</th>
+                                            <td>2025–26</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
 
                             <!-- Subject Marks -->
                             <h5 class="fw-semibold mb-3">Subject-wise Marks</h5>
@@ -500,8 +506,8 @@
                                     <thead class="table-light">
                                         <tr>
                                             <th>Subject</th>
-                                            <th>Max Marks</th>
-                                            <th>Marks Obtained</th>
+                                            <th>Max</th>
+                                            <th>Obtained</th>
                                             <th>Grade</th>
                                         </tr>
                                     </thead>
@@ -541,28 +547,30 @@
                             </div>
 
                             <!-- Summary -->
-                            <table class="table table-bordered mt-4">
-                                <tbody>
-                                    <tr>
-                                        <th>Total Marks</th>
-                                        <td>405 / 500</td>
-                                    </tr>
-                                    <tr>
-                                        <th>Percentage</th>
-                                        <td>81%</td>
-                                    </tr>
-                                    <tr>
-                                        <th>Overall Grade</th>
-                                        <td>A</td>
-                                    </tr>
-                                    <tr>
-                                        <th>Result Status</th>
-                                        <td class="fw-bold text-success">PASS</td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                            <div class="table-responsive-sm">
+                                <table class="table table-bordered mt-4">
+                                    <tbody>
+                                        <tr>
+                                            <th>Total Marks</th>
+                                            <td>405 / 500</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Percentage</th>
+                                            <td>81%</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Overall Grade</th>
+                                            <td>A</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Result Status</th>
+                                            <td class="fw-bold text-success">PASS</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
 
-                            <div class="alert alert-info mt-3 mb-0">
+                            <div class="alert alert-info mt-3 mb-0 text-center">
                                 This result is generated for verification purposes only.
                             </div>
 
@@ -572,6 +580,7 @@
                 </div>
             </div>
         </section>
+
 
         <!--End About Style1 Area-->
 
