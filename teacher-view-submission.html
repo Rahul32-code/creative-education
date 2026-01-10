@@ -444,9 +444,9 @@
                             <ul class="list-group list-group-flush">
                                 <a class="list-group-item">🏠 Dashboard</a>
                                 <a class="list-group-item">📅 Mark Attendance</a>
-                                <a class="list-group-item active text-white">📅 View Attendance</a>
+                                <a class="list-group-item">📅 View Attendance</a>
                                 <a class="list-group-item">📚 Create Assignments</a>
-                                <a class="list-group-item">📚 View Assignments</a>
+                                <a class="list-group-item active text-white">📚 View Assignments</a>
                                 <a class="list-group-item">📖 Syllabus</a>
                                 <a class="list-group-item">📢 Complaints</a>
                             </ul>
@@ -460,97 +460,93 @@
 
                     <!-- ================= Main ================= -->
                     <div class="col-lg-9">
-                        <div class="card shadow border-0">
+
+                        <div class="card shadow border-0 rounded-4">
                             <div class="card-header bg-primary text-white">
-                                <h5 class="mb-0">View Attendance</h5>
+                                <h5 class="mb-0">📚 Assignment Submission Status</h5>
                             </div>
 
                             <div class="card-body">
 
-                                <!-- Filters -->
-                                <form method="GET" class="row g-3 mb-4">
+                                <!-- Summary -->
+                                <div class="row g-3 mb-4">
 
                                     <div class="col-md-4">
-                                        <select name="class_id" class="form-select" required>
-                                            <option value="">Select Class</option>
-                                            <option value="10">Class 10 - A</option>
-                                            <option value="9">Class 9 - B</option>
-                                        </select>
+                                        <div class="card text-center shadow-sm border-0">
+                                            <div class="card-body">
+                                                <h3 class="text-primary mb-0">35</h3>
+                                                <small>Total Students</small>
+                                            </div>
+                                        </div>
                                     </div>
 
                                     <div class="col-md-4">
-                                        <label>Date</label>
-                                        <input type="date" name="date" class="form-control">
-                                    </div>
-
-                                    <div class="col-md-4 d-flex align-items-end">
-                                        <button class="btn btn-success w-100">
-                                            View Attendance
-                                        </button>
-                                    </div>
-
-                                </form>
-
-                                <!-- Attendance Table -->
-                                <table class="table table-bordered align-middle">
-                                    <div class="row mb-4">
-
-                                        <div class="col-md-6">
-                                            <div class="card shadow-sm border-0 text-center">
-                                                <div class="card-body">
-                                                    <h6 class="text-muted">Total Present Students</h6>
-                                                    <h2 class="text-success fw-bold">25</h2>
-                                                </div>
+                                        <div class="card text-center shadow-sm border-0">
+                                            <div class="card-body">
+                                                <h3 class="text-success mb-0">28</h3>
+                                                <small>Submitted</small>
                                             </div>
                                         </div>
-
-                                        <div class="col-md-6">
-                                            <div class="card shadow-sm border-0 text-center">
-                                                <div class="card-body">
-                                                    <h6 class="text-muted">Total Absent Students</h6>
-                                                    <h2 class="text-danger fw-bold">5</h2>
-                                                </div>
-                                            </div>
-                                        </div>
-
                                     </div>
 
-                                    <thead class="table-light">
-                                        <tr>
-                                            <th>#</th>
-                                            <th>Student</th>
-                                            <th>Roll No</th>
-                                            <th>Date</th>
-                                            <th>Status</th>
-                                        </tr>
-                                    </thead>
+                                    <div class="col-md-4">
+                                        <div class="card text-center shadow-sm border-0">
+                                            <div class="card-body">
+                                                <h3 class="text-danger mb-0">7</h3>
+                                                <small>Not Submitted</small>
+                                            </div>
+                                        </div>
+                                    </div>
 
-                                    <tbody>
-                                        <tr>
-                                            <td>1</td>
-                                            <td>Rahul Kumar</td>
-                                            <td>12</td>
-                                            <td>2026-01-09</td>
-                                            <td>
-                                                <span class="badge bg-success">Present</span>
-                                            </td>
-                                        </tr>
+                                </div>
 
-                                        <tr>
-                                            <td>2</td>
-                                            <td>Aman Verma</td>
-                                            <td>13</td>
-                                            <td>2026-01-09</td>
-                                            <td>
-                                                <span class="badge bg-danger">Absent</span>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                                <!-- Student Table -->
+                                <div class="table-responsive">
+                                    <table class="table table-striped align-middle text-center mb-0">
+                                        <thead class="table-dark">
+                                            <tr>
+                                                <th>Roll No</th>
+                                                <th>Student Name</th>
+                                                <th>Status</th>
+                                                <th>Submission</th>
+                                                <th>Date</th>
+                                            </tr>
+                                        </thead>
+
+                                        <tbody>
+                                            <tr>
+                                                <td>01</td>
+                                                <td>Rahul Kumar</td>
+                                                <td><span class="badge bg-success">Submitted</span></td>
+                                                <td>
+                                                    <a href="#" class="btn btn-sm btn-outline-success">View PDF</a>
+                                                </td>
+                                                <td>10 Sept 2026</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>02</td>
+                                                <td>Amit Singh</td>
+                                                <td><span class="badge bg-danger">Not Submitted</span></td>
+                                                <td>—</td>
+                                                <td>—</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>03</td>
+                                                <td>Neha Verma</td>
+                                                <td><span class="badge bg-success">Submitted</span></td>
+                                                <td>
+                                                    <a href="#" class="btn btn-sm btn-outline-success">View PDF</a>
+                                                </td>
+                                                <td>11 Sept 2026</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
 
                             </div>
                         </div>
-
                     </div>
 
                 </div>
