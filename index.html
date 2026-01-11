@@ -1411,7 +1411,9 @@
                     <div class="col-xl-4 col-lg-4 my-4">
                         <div class="card shadow-sm h-100">
                             <div class="card-body bg-white">
-                                <h5 class="text-danger mb-3">📢 Announcements</h5>
+                                <h5 class="text-danger mb-3 text-uppercase" style="font-size: x-large; font-weight: 500;">
+                                    📢 Announcements
+                                </h5>
                                 <div class="overflow-hidden" style="height:400px;">
                                     <ul class="list-group list-group-flush announcement-scroll">
                                         <li class="list-group-item">Admissions Open (2025–26)</li>
@@ -1437,7 +1439,9 @@
                                     <input type="email" class="form-control" id="email" placeholder="Email" required>
                                 </div>
                                 <div class="form-floating mb-3">
-                                    <input type="tel" class="form-control" id="phone" placeholder="Phone" required>
+                                    <input type="tel" class="form-control" id="phone" placeholder="Phone"
+                                        inputmode="numeric" pattern="[0-9]*" required
+                                        oninput="this.value = this.value.replace(/[^0-9]/g, '')">
                                 </div>
                                 <div class="form-floating mb-4">
                                     <textarea class="form-control" placeholder="Message" id="message"
